@@ -1,15 +1,21 @@
 import { Check } from "lucide-react"
-import { Link, useParams } from "react-router-dom"
+import { Link, Navigate, useParams } from "react-router-dom"
 import Seo from "../components/Seo"
 import PageHeader from "../components/PageHeader"
 import ServiceGlyph from "../components/ServiceGlyph"
 import { Button, Container, TextLink } from "../components/ui"
-import { getService, relatedServices } from "../data/services"
+import { RETIRED_SERVICE_SLUGS, SERVICE_ALIASES, getService, relatedServices, servicePath } from "../data/services"
 import { SITE, breadcrumbNode, localBusinessNode, webPageNode, whatsappHref } from "../data/site"
 import NotFoundPage from "./NotFoundPage"
 
 export default function ServiceDetailPage() {
   const { slug } = useParams()
+  if (slug && RETIRED_SERVICE_SLUGS.has(slug)) {
+    return <Navigate to="/services" replace />
+  }
+  if (slug && SERVICE_ALIASES[slug]) {
+    return <Navigate to={servicePath(SERVICE_ALIASES[slug])} replace />
+  }
   const service = getService(slug)
 
   if (!service) return <NotFoundPage />
@@ -35,7 +41,7 @@ export default function ServiceDetailPage() {
           {
             "@type": "Service",
             name: service.title,
-            serviceType: "Scaffolding and access",
+            serviceType: service.title,
             description: service.description,
             url: `${SITE.url}${path}`,
             image: `${SITE.url}${service.image}`,
@@ -59,6 +65,9 @@ export default function ServiceDetailPage() {
         <Container className="grid gap-12 lg:grid-cols-12">
           <div className="order-1 lg:col-span-7">
             <img src={service.image} alt={service.imageAlt} className="aspect-[4/5] w-full object-cover sm:aspect-[4/3]" />
+            {service.imageCredit ? (
+              <p className="mt-2 text-xs text-ink/55">{service.imageCredit}</p>
+            ) : null}
             <p className="mt-8 text-lg leading-relaxed text-ink/85">{service.intro}</p>
           </div>
 
@@ -85,7 +94,7 @@ export default function ServiceDetailPage() {
                 ))}
               </ul>
               <Button to="/contact" className="mt-8 w-full">
-                Request this scaffold
+                Request this work
               </Button>
               <a
                 href={whatsappHref(`Hello B&H Proscaff. I need ${service.title.toLowerCase()}.`)}
@@ -109,6 +118,22 @@ export default function ServiceDetailPage() {
                 ))}
               </section>
             ))}
+            {service.gallery && service.gallery.length > 0 ? (
+              <section className="mt-12">
+                <h2 className="h-display text-3xl">From our sites</h2>
+                <div className="mt-6 grid grid-cols-2 gap-3">
+                  {service.gallery.map((photo) => (
+                    <img
+                      key={photo.src}
+                      src={photo.src}
+                      alt={photo.alt}
+                      className="aspect-[4/5] w-full object-cover"
+                      loading="lazy"
+                    />
+                  ))}
+                </div>
+              </section>
+            ) : null}
           </div>
         </Container>
       </article>

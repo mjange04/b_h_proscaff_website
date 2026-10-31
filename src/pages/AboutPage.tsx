@@ -5,12 +5,12 @@ import { breadcrumbNode, fullAddress, localBusinessNode, webPageNode } from "../
 
 const TITLE = "About B&H Proscaff Engineering Limited | Salasala"
 const DESCRIPTION =
-  "B&H Proscaff Engineering Limited is a scaffolding firm based in Salasala, Dar es Salaam. We erect, alter, and strike access, and hire scissor platforms."
+  "B&H Proscaff Engineering Limited is based in Salasala, Dar es Salaam. Scaffolding hire and sales, formwork hire and sales, event stages, coatings, platforms, cradles, and trusswork."
 
 const EXPECTATIONS = [
   {
     title: "A straight recommendation",
-    body: "Tied scaffold, freestanding deck, mobile tower, or scissor platform. We name one, and we say why the others are the wrong hire.",
+    body: "Scaffold, formwork, a cradle, or a scissor platform. We name one, and we say why the others are the wrong hire.",
   },
   {
     title: "Steel matched to the elevation",
@@ -59,7 +59,7 @@ export default function AboutPage() {
             <h2 className="h-display text-3xl sm:text-4xl">The company is the work.</h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-ink/80">
               <p>
-                B&H Proscaff Engineering Limited stands scaffolds and hires scissor platforms. A house being finished, a block of flats still in frame, a hall that needs people under the roof, a yard that needs a deck for the day: those are the jobs.
+                B&H Proscaff Engineering Limited stands scaffolds, and the work that sits beside them: formwork hire, event stages, coatings, cradles, and trusswork. A house being finished, a block still in frame, a hall under a roof, a yard that needs a deck: those are still the jobs. The rest of the list is what those jobs usually pull in next.
               </p>
               <p>
                 We do not leave a bundle of tubes and hope the site sorts the ties. The layout is agreed, a crew erects it, and the same crew takes it down. If the programme is in Dar es Salaam, Salasala is a short run for the truck. If the site is further out in Tanzania, say so when you call and we will tell you whether we can man it properly.

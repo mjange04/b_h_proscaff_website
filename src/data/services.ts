@@ -1,14 +1,20 @@
 export type ServiceIconName =
-  | "elevation"
-  | "frame"
-  | "internal"
-  | "deck"
-  | "tower"
+  | "scaffold"
+  | "formwork"
+  | "truss"
+  | "events"
+  | "coatings"
   | "scissor"
+  | "cradle"
 
 export type ServiceSection = {
   heading: string
   paragraphs: string[]
+}
+
+export type ServicePhoto = {
+  src: string
+  alt: string
 }
 
 export type Service = {
@@ -19,282 +25,347 @@ export type Service = {
   summary: string
   image: string
   imageAlt: string
+  imageCredit?: string
   icon: ServiceIconName
   points: string[]
   needs: string[]
   intro: string
   sections: ServiceSection[]
+  gallery?: ServicePhoto[]
 }
+
+export const SERVICE_ALIASES: Record<string, string> = {
+  "elevation-scaffolds": "scaffolding",
+  "frame-access": "scaffolding",
+  "internal-scaffolds": "scaffolding",
+  "freestanding-decks": "scaffolding",
+  "mobile-towers": "scaffolding",
+  "event-structures": "event-stages",
+  "suspended-access": "cradle",
+  "truss-support": "trusswork",
+}
+
+export const RETIRED_SERVICE_SLUGS = new Set(["site-materials", "crew-training"])
 
 export const SERVICES: Service[] = [
   {
-    slug: "elevation-scaffolds",
-    title: "Elevation scaffolds",
-    seoTitle: "Elevation and Façade Scaffolding in Dar es Salaam | B&H Proscaff",
-    description:
-      "Tied elevation scaffolds for façades, balconies, and window lines in Dar es Salaam. B&H Proscaff erects, alters, and strikes the access.",
-    summary: "Tied access along existing walls, balconies, and window lines.",
-    image: "/images/elevation.jpg",
-    imageAlt:
-      "Tube-and-coupler scaffold running the length of a residential block, with lifts at the balconies and windows",
-    icon: "elevation",
-    points: [
-      "Boarded lifts to the height the outside trade actually needs",
-      "Ties into sound structure, agreed before the first standard goes up",
-      "Guard rails and toe boards on the working lifts",
-      "Ladder or stair access that leaves a lived-in entrance usable",
-      "Alterations when a bay has to open for a window, a hoist, or a gate",
-      "Strike and removal when that elevation is finished",
-    ],
-    needs: [
-      "The address, and a photograph of the elevation if you have one",
-      "How high the work goes, storey by storey",
-      "Whether people are living or trading on the ground floor",
-      "How many weeks you expect the steel to stay",
-    ],
-    intro:
-      "An elevation scaffold is tied back to a building that is already standing, so painters, plasterers, glaziers, and repair crews can work along the outside without a ladder as their only plan. The footprint stays close to the wall, which matters when a tree, a boundary, or a live pavement is in the way.",
-    sections: [
-      {
-        heading: "Where this scaffold belongs",
-        paragraphs: [
-          "Use it when the work is on the face of a finished or occupied building: external paint, making-good after leaks, balcony repairs, window replacement, or a full re-plaster. It is also the arrangement we stand on low-rise houses while render, glazing, and balcony finishes are underway.",
-          "It is the wrong tool when the building is still a climbing concrete frame and the floor plate changes every week. That job wants access that rises with the structure, not a finished elevation tied once and left.",
-        ],
-      },
-      {
-        heading: "How we set it out",
-        paragraphs: [
-          "We walk the face and note doors that must stay open, cables, air-conditioning units, and soft ground at the base. Lifts are spaced for the trade, not for a drawing that ignores the balcony slab already there. Ties go into parts of the building that can hold them, and we say so if a wall is too weak.",
-          "Sheeting, if you want the dust kept in, is a separate decision. A sheeted bay catches wind. We only add it when the ties and the bracing are there for it.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "frame-access",
-    title: "Access for rising frames",
-    seoTitle: "Multi-Storey Frame Scaffolding in Dar es Salaam | B&H Proscaff",
-    description:
-      "Scaffolding around reinforced-concrete frames as floors go up. B&H Proscaff provides external access for blockwork, openings, and finishes in Dar es Salaam.",
-    summary: "External access that follows a concrete frame as the floors climb.",
-    image: "/images/frame-side.jpg",
-    imageAlt:
-      "Scaffold standing against a multi-storey concrete and block building, with reinforcement still exposed on the upper floor",
-    icon: "frame",
-    points: [
-      "Lifts that follow the floor plate, not a guess at the final height",
-      "Access to beam sides, window openings, and external blockwork",
-      "Bays that can come down where a truck, hoist, or gate must pass",
-      "Guard rails on the lifts other trades will actually use",
-      "Alterations as the next slab changes the working height",
-      "A crew that returns to adapt the scaffold, rather than leaving fittings for the site to rearrange",
-    ],
-    needs: [
-      "Which floors are in progress, and which elevation we are serving first",
-      "Where vehicles and a hoist have to reach the building",
-      "How long each working lift needs to stay before the next pour",
-      "Who on site we take instructions from when the programme moves",
-    ],
-    intro:
-      "A rising frame does not want one scaffold designed for the finished building and ignored until handover. It wants access that is already there when blockwork, window openings, and external finishes reach that floor — and that can move when the next slab changes the height.",
-    sections: [
-      {
-        heading: "Built around the programme",
-        paragraphs: [
-          "We agree which bays stay for the month and which are temporary. A scaffold that blocks the only gate is not a service, even if the elevation looks complete. Loading and vehicle routes are part of the layout, not an afterthought once the steel is up.",
-          "The photographs in this section show tied access across concrete frames and block infill, with the upper structure still open. That is the stage we plan for: people working on the outside while the building is unfinished above them.",
-        ],
-      },
-      {
-        heading: "What we will not leave to chance",
-        paragraphs: [
-          "Other trades do not add boards, pull ties, or sheet a bay because it is convenient that afternoon. If the work changes, call us and the same crew alters it. A scaffold that has been quietly rebuilt by three different gangs is no longer the one we handed over.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "internal-scaffolds",
-    title: "Internal grid scaffolds",
-    seoTitle: "Internal and Birdcage Scaffolding | B&H Proscaff Dar es Salaam",
-    description:
-      "Internal grid scaffolds for halls, shells, and overhead work. B&H Proscaff sets boarded levels inside the building, with a clear way down.",
-    summary: "A dense grid inside a hall or shell, boarded where the overhead work is.",
-    image: "/images/internal-grid.jpg",
-    imageAlt:
-      "A dense red scaffold grid filling the inside of a large hall, with working levels set high under the roof",
-    icon: "internal",
-    points: [
-      "Standards and ledgers set out to the bay, not a single tower in the middle of a wide room",
-      "A boarded level at the height the overhead task needs",
-      "A clear route from that level back to the floor",
-      "Room below the deck for materials to move, agreed on the walk-round",
-      "Bracing and ties suited to an enclosed structure",
-      "Strike planned so the hall can be cleared, not left as a store of loose tube",
-    ],
-    needs: [
-      "What is overhead: roof steel, a soffit, services, or a high internal wall",
-      "The clear height, and anything already fixed that we must miss",
-      "Whether the floor is a slab, compacted fill, or still open",
-      "When other trades need the ground clear again",
-    ],
-    intro:
-      "Some of the work is not on the façade. It is under a roof, along a high internal wall, or across a hall where one tower cannot cover the task. We fill the bay with a grid and board the level where people need to stand, with a proper way down.",
-    sections: [
-      {
-        heading: "A hall is not a façade",
-        paragraphs: [
-          "Inside, there may be no wall in the right place to tie to, the floor may still be a working route, and the thing you are reaching is a ceiling rather than a window. The grid is there so the working level is continuous enough for the task, and so people are not climbing from one loose board to the next.",
-          "The photograph on this page is that kind of scaffold: system steel filling a hall, levels set high, the floor still usable as a route for materials. Tell us if the deck also has to carry more than people and hand tools. The layout changes if it does.",
-        ],
-      },
-      {
-        heading: "Order of work",
-        paragraphs: [
-          "We want to know what is already fixed in the volume — ducts, lights, a temporary roof, a crane beam — before we set the grid. Moving a forest of standards after the first lift is up is slower than walking the hall properly the first time.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "freestanding-decks",
-    title: "Freestanding working decks",
-    seoTitle: "Freestanding Scaffold Decks and Independent Towers | B&H Proscaff",
-    description:
-      "Independent scaffold decks for yards and hard standings in Dar es Salaam, with guard rails, bracing, and a base suited to the ground.",
-    summary: "An independent deck on hard ground, when there is no wall to tie to.",
-    image: "/images/deck-day.jpg",
-    imageAlt:
-      "A freestanding scaffold with a long guarded deck on a concrete hard standing in a work yard",
-    icon: "deck",
-    points: [
-      "A structure that stands on its base, not on a tie to a façade",
-      "Base plates, and sole boards where the ground is not already a sound slab",
-      "Bracing so the frame does not rack when people move on the deck",
-      "Guard rails and a boarded platform at the working height",
-      "Ladder access to that deck",
-      "A straight refusal if the ground is too soft for the height you want",
-    ],
-    needs: [
-      "A photograph of the ground in daylight",
-      "The height of the thing you need to reach",
-      "How many people will be on the deck, and with what tools",
-      "How long it stays, and whether it must move",
-    ],
-    intro:
-      "When there is no wall to tie to — a yard, a slab, a gap beside plant — the scaffold has to stand on its own. We build an independent deck with guard rails, bracing, and a base that matches the ground, then take it down when the overhead job is done.",
-    sections: [
-      {
-        heading: "Ground first",
-        paragraphs: [
-          "A freestanding scaffold is only as honest as what it sits on. A concrete hard standing is a different problem from loose soil after rain. We look at the ground before we promise a height. If it needs sole boards, pads, or a smaller deck, that is the answer we will give you.",
-          "These decks suit inspections, overhead work in a yard, and short tasks beside vehicles or plant. They are not a substitute for a tied elevation on a building, and we will say so if that is what the job actually is.",
-        ],
-      },
-      {
-        heading: "Left complete",
-        paragraphs: [
-          "The top is a platform with guard rails, not a single board on the last ledger. If the task changes height, we alter the deck. People on site do not remove bracing because it is in the way of a truck — call, and we will open a bay properly or move the whole stand.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "mobile-towers",
-    title: "Mobile access towers",
-    seoTitle: "Mobile Scaffold Towers in Dar es Salaam | B&H Proscaff",
-    description:
-      "Wheeled scaffold towers for columns, gates, and short tasks in Dar es Salaam. Castors locked before anyone climbs. Moved only when the platform is clear.",
-    summary: "A wheeled tower for a column, a gate, or a task that moves during the day.",
-    image: "/images/mobile-tower.jpg",
-    imageAlt:
-      "Crew in hard hats working from a wheeled scaffold tower beside column formwork on a building site",
-    icon: "tower",
-    points: [
-      "A boarded platform with guard rails, not an open frame",
-      "Castors locked before anyone climbs",
-      "The tower moved only when people and loose materials are off it",
-      "A wider base or outriggers when the height calls for them",
-      "Useful beside columns, gates, junctions, and local repairs",
-      "Struck or parked when the shift is done, rather than left as a climbing frame",
-    ],
-    needs: [
-      "The working height and a photo of where it will stand",
-      "Whether the tower has to move, and across what surface",
-      "How many hours or days the task lasts",
-      "Whether a tied elevation would be the safer, cheaper answer",
-    ],
-    intro:
-      "A full elevation is the wrong amount of steel for a job that lasts a day and moves twice. A mobile tower gives a guarded platform on castors for a column, a junction, a sign, or a local repair — and it stays locked while anyone is on it.",
-    sections: [
-      {
-        heading: "Short work, complete tower",
-        paragraphs: [
-          "The value of a tower is speed, not a licence to improvise. We hand it over complete: boards, rails, a locked castor, and a base wide enough for the height. The photograph here shows that kind of use beside column formwork, with the crew on a boarded lift and the wheels on the slab.",
-          "We move it when the platform is clear. We do not roll a tower while someone is still on the deck, and we do not ask a castor to travel across soft ground or a slope it was not stood for.",
-        ],
-      },
-      {
-        heading: "When to choose steel instead",
-        paragraphs: [
-          "If the work runs the length of a building, or people need to be there for weeks, a tied scaffold is usually the better hire. Tell us the duration. We would rather put up the right arrangement than leave a tower doing a job it was not meant to hold.",
-        ],
-      },
-    ],
-  },
-  {
     slug: "scissor-platforms",
-    title: "Scissor platform hire",
-    seoTitle: "Scissor Lift Hire in Dar es Salaam | B&H Proscaff",
+    title: "Scissor platform hire and sales",
+    seoTitle: "Scissor Lift Hire and Sales in Dar es Salaam | B&H Proscaff",
     description:
-      "Scissor platform hire from Salasala for firm, level ground in Dar es Salaam. B&H Proscaff hands the machine over with a short briefing, or recommends a scaffold instead.",
-    summary: "A scissor platform for firm, level ground, when a scaffold would take longer than the task.",
+      "Scissor platform hire and sales from Salasala. B&H Proscaff briefs the operator, or recommends a scaffold when the ground or the duration says so.",
+    summary: "A maintained scissor platform for firm, level ground — hired or sold — with a briefing, not just a drop-off.",
     image: "/images/scissor-lift.jpg",
-    imageAlt:
-      "Green scissor lift with a guarded platform, black scissor stack, and wheels, photographed against a plain wall",
+    imageAlt: "Green scissor lift with a guarded platform, black scissor stack, and wheels",
     icon: "scissor",
     points: [
       "Hire for work within the machine’s height, on ground we have looked at",
-      "A handover covering travel, descent, and the area people on foot must keep clear",
+      "Sales of the same class of platform when owning it is the cheaper year",
+      "Handover covering travel, descent, and the area people on foot must keep clear",
       "Not offered for soft soil, a slope, or a slab we have not seen",
       "A clear answer if a tied scaffold is the better tool",
-      "Agreed collection or delivery from our Salasala base",
-      "The platform returned as briefed, not left as an unattended climb",
+      "Collection or delivery from our Salasala base",
     ],
     needs: [
       "The height of the work and how long you need the machine",
       "A photograph of the floor or hard standing",
       "Indoor or outdoor, and whether it must pass a doorway",
-      "Who will operate it, so the briefing reaches that person",
+      "Whether you are hiring or asking about a purchase",
     ],
     intro:
-      "A scissor platform is not a scaffold, and we do not describe it as one. It is the right hire when the ground is firm and level, the work sits within the machine’s reach, and you need to be up and down in the same shift. If the ground or the duration says scaffold, that is what we will tell you.",
+      "A scissor platform is not a scaffold. It is the right machine when the ground is firm and level, the work sits within its reach, and you need to be up and down in the same shift. We hire it, we sell it when that is the better commercial answer, and we will tell you to use steel instead if the ground or the duration says so.",
     sections: [
       {
         heading: "Handover, not just delivery",
         paragraphs: [
-          "Before the platform is used we agree the route it will travel and the height you need. The briefing is short and practical: how it rises and comes down, what the ground must be like, and where people on foot should not stand. We would rather spend ten minutes there than collect a machine that has been driven onto a soft edge.",
-          "Send the height and a photo of the ground when you call. From Salasala we can say whether we should bring the platform or bring steel.",
+          "Before the platform is used we agree the route and the height. The briefing is short: how it rises and comes down, what the ground must be like, and where people on foot should not stand. We would rather spend ten minutes there than collect a machine that has been driven onto a soft edge.",
         ],
       },
       {
-        heading: "What this hire is not",
+        heading: "Buying when hire no longer pays",
         paragraphs: [
-          "It is not a way to avoid guard rails on a building face, and it is not a crane. If the task is a long elevation, an internal hall, or anything on uneven ground, look at the scaffold pages. We hire the platform for the jobs it is actually good at.",
+          "If you will need the same machine every month, ask about a sale. The briefing still happens. A platform that sits in a yard with nobody who has been shown the controls is not a saving.",
         ],
       },
     ],
   },
+  {
+    slug: "event-stages",
+    title: "Event stages",
+    seoTitle: "Event Stages in Dar es Salaam | B&H Proscaff",
+    description:
+      "Stage decks, roofs, speaker towers, and viewing platforms for events in Dar es Salaam, erected on a tight load-in and struck when the show is over.",
+    summary: "Stages, roofs, and towers for a ceremony, a concert, or a brand day — up for the show, gone after the last encore.",
+    image: "/images/event-stage.jpg",
+    imageAlt: "Outdoor performance stage built from scaffold towers and truss, with lighting and a crowd in front",
+    imageCredit: "Photograph: Pexels (free licence).",
+    icon: "events",
+    points: [
+      "Stage decks and risers sized to the production, not to leftover scaffold bays",
+      "Roof and canopy frames with hang points agreed with the lighting and sound crew",
+      "Towers for speakers, screens, and scenic pieces",
+      "Viewing stands and crew access that do not mix with the public route",
+      "Load-in and strike that match the venue’s hours, not our convenience",
+      "A walk-round with the producer before anyone hangs a lamp",
+    ],
+    needs: [
+      "The date, the venue, and how many hours you have to get in",
+      "A plan or a sketch of the stage, roof, and hang points",
+      "Ground: grass, slab, or a slope",
+      "Who is the on-site contact during load-in",
+    ],
+    intro:
+      "An event is not a building programme. You get a few hours, a piece of ground, and a list of hang points. We stand the stage, the roof, and the towers so the technical crew can load in — and we take them down when the site has to be a field again.",
+    sections: [
+      {
+        heading: "The show is the deadline",
+        paragraphs: [
+          "We work backwards from doors. If the roof cannot take the lamps you want, we say so before the truck is booked, not at dusk. Wind on a sheeted roof is a real limit. We would rather reduce the hang than leave a structure we will not stand under.",
+        ],
+      },
+      {
+        heading: "Then it comes down",
+        paragraphs: [
+          "Strike is part of the hire. Leaving a stage “until Monday” because the crew is tired is how venues lose their deposit. We plan the take-down with the same people who put it up.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "formwork",
+    title: "Formwork hire and sales",
+    seoTitle: "Formwork Hire and Sales in Dar es Salaam | B&H Proscaff",
+    description:
+      "Formwork hire and sales for reinforced-concrete walls, slabs, and columns in Dar es Salaam, coordinated with B&H Proscaff access so the pour and the scaffold are not fighting for the same bay.",
+    summary: "Shutters and falsework for hire or purchase, planned with the access so the pour is not blocked by the steel.",
+    image: "/images/formwork.jpg",
+    imageAlt: "Concrete building under construction with wall formwork still in place on the upper storey",
+    imageCredit: "Photograph: Wikimedia Commons, Brazil formwork (public domain).",
+    icon: "formwork",
+    points: [
+      "Wall, column, and slab shutters sized to the pour, not leftover from the last job",
+      "Falsework that carries the wet concrete until the member can take itself",
+      "Strike and reuse planned so panels are not buried behind the next lift of scaffold",
+      "Coordination with our access crew when the same elevation needs both",
+      "A clear hold-point before anyone pours against a shutter we have not checked",
+      "Short- and long-term hire, or a sale when the pour programme makes owning the panels cheaper",
+    ],
+    needs: [
+      "Which members are pouring next, and in what order",
+      "The storey height and the thickness of the slab or wall",
+      "Whether our scaffold is already standing on that elevation",
+      "How many days the shutter must stay before it can come off",
+    ],
+    intro:
+      "Concrete does not wait for a tidy scaffold. Hire the shutters for the pours you have, or buy the panels if the programme will keep them turning. Either way we set the formwork so the pour can happen, then strike it in time for the next lift — including when our own scaffold is on the same face.",
+    sections: [
+      {
+        heading: "The pour comes first on that day",
+        paragraphs: [
+          "A wall shutter that cannot be plumbed because a scaffold ledger is in the way is not a surprise we should discover at 6 a.m. We walk the elevation with the access layout in mind: which bays stay, which open for the pour, and who is allowed in the bay while the concrete is going in.",
+          "Falsework is the part people forget until the slab is wet. Tell us the span and the load. We will not guess a prop centres from a photograph of a similar building.",
+        ],
+      },
+      {
+        heading: "Not a timber store",
+        paragraphs: [
+          "Panels, soldiers, and props leave Salasala for an agreed sequence. They are not a surplus for the site to invent with. If the pour list changes, we re-cut the hire. Leaving a stack of shutters “for later” is a different agreement.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "scaffolding",
+    title: "Scaffolding hire and sales",
+    seoTitle: "Scaffolding Hire and Sales in Dar es Salaam | B&H Proscaff",
+    description:
+      "B&H Proscaff hires and sells scaffolding in Dar es Salaam: tied elevations, frame access, internal grids, freestanding decks, and mobile towers, erected and struck by our crew.",
+    summary: "Hire the steel for the job, or buy the stock — tied elevations, climbing frames, internal grids, decks, and towers.",
+    image: "/images/internal-grid.jpg",
+    imageAlt: "Dense internal scaffold filling a hall, with working levels set high under the roof",
+    icon: "scaffold",
+    points: [
+      "Tied access along façades, balconies, and window lines",
+      "External lifts that follow a concrete frame as the floors climb",
+      "Internal grids for halls, shells, and overhead work",
+      "Independent decks on hard ground when there is no wall to tie to",
+      "Mobile towers for a column, a gate, or a task that moves during the day",
+      "Short- and long-term hire, plus sales of tubes, fittings, boards, and towers",
+      "Inspection, alteration, and strike by the same crew that put it up",
+    ],
+    needs: [
+      "The address, and a photograph of the face, hall, or ground",
+      "How high the work goes, and how long the steel must stay",
+      "Whether people still use the ground floor, a gate, or a hoist route",
+      "Which trade will stand on the lifts first",
+    ],
+    intro:
+      "You can hire the scaffold for the weeks you need it, or buy the stock if your programme will keep it busy. Either way we walk the site, name the arrangement, erect it, and strike it when that part of the work is finished.",
+    sections: [
+      {
+        heading: "What we actually stand",
+        paragraphs: [
+          "On an occupied elevation the steel stays close to the wall so painters, plasterers, and glaziers can work the window line without a ladder as the only plan. On a rising frame the lifts follow the floor plate, with bays that can open for a truck or a hoist. Inside a hall we fill the bay with a grid and board the level under the roof. In a yard we stand an independent deck on its base. For a column or a gate that moves twice in a day, a wheeled tower is usually enough.",
+          "The photographs on this page are from our own sites: an internal grid, a climbing frame, a residential elevation, a house being finished, a yard deck, and a tower beside formwork. That is the work, not a catalogue of systems we do not run.",
+        ],
+      },
+      {
+        heading: "One crew from the first standard to the strike",
+        paragraphs: [
+          "Other trades do not add boards, pull ties, or sheet a bay because it suits the next hour. If the programme changes, call us. A scaffold that has been quietly rebuilt by three gangs is no longer the one we handed over.",
+          "Sheeting, if you want dust kept in, is a separate decision. A sheeted bay catches wind. We only add it when the ties and bracing are there for it.",
+        ],
+      },
+    ],
+    gallery: [
+      { src: "/images/frame-side.jpg", alt: "Tied scaffold along a multi-storey concrete and block frame" },
+      { src: "/images/elevation.jpg", alt: "Tube-and-coupler elevation along balconies and windows" },
+      { src: "/images/house-finish.jpg", alt: "Finishing scaffold on a two-storey house" },
+      { src: "/images/deck-day.jpg", alt: "Freestanding scaffold deck on a hard standing" },
+      { src: "/images/mobile-tower.jpg", alt: "Crew working from a mobile tower beside column formwork" },
+    ],
+  },
+  {
+    slug: "surface-coatings",
+    title: "Surface preparation and coatings",
+    seoTitle: "Sandblasting and Protective Coatings | B&H Proscaff Dar es Salaam",
+    description:
+      "B&H Proscaff prepares steel and concrete and applies protective coatings in Dar es Salaam, including work from the same scaffold our access crew is standing.",
+    summary: "Blast, profile, and coat — on steel, tanks, and elevations — often from the scaffold already on the face.",
+    image: "/images/house-finish.jpg",
+    imageAlt: "Finishing work on a house elevation, with a working lift at the upper floor",
+    icon: "coatings",
+    points: [
+      "Abrasive preparation where the specification calls for a clean, keyed surface",
+      "Protective coatings on structural steel, scaffold stock, tanks, and civil faces",
+      "Access from our own scaffold when the elevation is already stood",
+      "Containment discussed before anyone starts a dusty process on a live street",
+      "A hold-point between preparation and the first coat",
+      "Recoat of hired steel before it goes back into service, when that is in the job",
+    ],
+    needs: [
+      "What is being coated, and the specification if you have one",
+      "Whether the work is on a live elevation or in a yard",
+      "How dust and overspray must be kept off neighbours",
+      "Whether our scaffold is already the access",
+    ],
+    intro:
+      "A coating is only as good as the surface under it. We prepare steel and concrete, then put the system on — often from the same elevation our crew is already standing. If the face is occupied, we talk about dust and sheeting before the first blast.",
+    sections: [
+      {
+        heading: "Preparation is the job",
+        paragraphs: [
+          "Skipping the profile to save a day is how a coat peels in the first rains. We will not paint over mill scale, rust, or a dusty plaster and call it a finish. If the specification is missing, we still say what we are going to do to the surface, in writing, before we start.",
+        ],
+      },
+      {
+        heading: "On a live elevation",
+        paragraphs: [
+          "A house being finished, as in the photograph, is a different problem from a tank in a yard. People walk underneath. Windows stay in. We plan the access, the drop sheets, and the hours so the coating does not become a complaint from the floor below.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "cradle",
+    title: "Cradle",
+    seoTitle: "Cradle Hire in Dar es Salaam | B&H Proscaff",
+    description:
+      "Suspended cradles for façade cleaning, repairs, and coatings in Dar es Salaam, when a tied scaffold is the wrong amount of steel for a tall face.",
+    summary: "A cradle on the façade when a full scaffold would take longer than the work on the glass or the cladding.",
+    image: "/images/cradle.jpg",
+    imageAlt: "High-rise building under construction, the kind of tall elevation where suspended access is often used",
+    imageCredit: "Photograph: Pexels (free licence).",
+    icon: "cradle",
+    points: [
+      "Cradles for cleaning, repairs, coatings, and installation on a tall face",
+      "A building that can actually take the suspension — we will say no if it cannot",
+      "Operator briefing and a simple rescue conversation before anyone goes over the edge",
+      "Coordination with the building manager on hours, drop zones, and wind",
+      "Inspection of the equipment before it is hung",
+      "A recommendation to stand a tied scaffold instead when the work is wide and long",
+    ],
+    needs: [
+      "The height of the face, and photographs of the roof or suspension points",
+      "What the crew will do from the cradle, and for how many days",
+      "Who manages the building, so we can agree drop zones",
+      "Wind exposure and neighbouring properties",
+    ],
+    intro:
+      "Some elevations are too high, too occupied, or too short in duration for a full tied scaffold. A cradle hangs the working platform from above. It is the right tool for a strip of façade, not for a house that needs three weeks of plaster.",
+    sections: [
+      {
+        heading: "The building has to accept it",
+        paragraphs: [
+          "We look at the roof, the parapet, and the drop before we promise a cradle. If there is nowhere honest to hang from, the answer is scaffold or a different machine. We do not invent an anchorage from a photograph of a similar tower.",
+        ],
+      },
+      {
+        heading: "Not a shortcut around a proper elevation",
+        paragraphs: [
+          "If painters need the whole face for a month, a cradle will cost more time than it saves. Tell us the duration. We would rather stand the steel than leave people swinging past the same window twice a day.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "trusswork",
+    title: "Trusswork",
+    seoTitle: "Trusswork in Dar es Salaam | B&H Proscaff",
+    description:
+      "Steel truss and temporary structural support from B&H Proscaff in Dar es Salaam: load paths agreed first, then the members go in, then they come out when the building can take the load.",
+    summary: "Truss and temporary support for roofs, openings, and loads that cannot sit on the scaffold alone.",
+    image: "/images/truss.jpg",
+    imageAlt: "Large steel roof truss spanning an open structure during construction",
+    imageCredit: "Photograph: Wikimedia Commons, steel roof truss (CC BY-SA).",
+    icon: "truss",
+    points: [
+      "Appraisal of what is being carried, and what it is allowed to sit on",
+      "Supply and installation of truss and support members for that load",
+      "Temporary support through an opening, a roof lift, or a weakened bay",
+      "Interfaces with scaffold so the two structures are not sharing a standard by accident",
+      "A written word on when the support can come out",
+      "Strike once the permanent work can take the load",
+    ],
+    needs: [
+      "What is being supported, and for how long",
+      "Drawings or a measured sketch of the span",
+      "What sits underneath: a slab, a wall, or another temporary structure",
+      "Who on site signs the sequence",
+    ],
+    intro:
+      "A scaffold is for people. When the load is a roof, a beam, or a bay that has been cut open, the answer is truss and support — sized for that load, stood on something that can hold it, and taken out when the permanent work is ready.",
+    sections: [
+      {
+        heading: "Do not hang this on a working lift",
+        paragraphs: [
+          "We have seen sites hang a roof member from a scaffold because it was already there. That is not a method. If the load is structural, we treat it as structural: the path to the ground is agreed, the members are installed for that path, and nobody uses the support as a climbing frame.",
+        ],
+      },
+      {
+        heading: "In, then out",
+        paragraphs: [
+          "Temporary support that stays “just in case” becomes part of the building by neglect. We want a date, or a hold-point, for removal. If the permanent work is late, we come back and look again. We do not leave steel in because it is convenient.",
+        ],
+      },
+    ],
+  }
+
 ]
 
 export function servicePath(slug: string) {
   return `/services/${slug}`
 }
 
-export function getService(slug: string | undefined) {
+export function resolveServiceSlug(slug: string | undefined) {
   if (!slug) return undefined
-  return SERVICES.find((service) => service.slug === slug)
+  return SERVICE_ALIASES[slug] ?? slug
+}
+
+export function getService(slug: string | undefined) {
+  const resolved = resolveServiceSlug(slug)
+  if (!resolved) return undefined
+  return SERVICES.find((service) => service.slug === resolved)
 }
 
 export function serviceNumber(index: number) {
@@ -302,7 +373,8 @@ export function serviceNumber(index: number) {
 }
 
 export function relatedServices(slug: string) {
-  const index = SERVICES.findIndex((service) => service.slug === slug)
+  const resolved = resolveServiceSlug(slug)
+  const index = SERVICES.findIndex((service) => service.slug === resolved)
   if (index === -1) return []
   return [1, 2].map((step) => SERVICES[(index + step) % SERVICES.length])
 }

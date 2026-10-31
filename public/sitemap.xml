@@ -2,119 +2,85 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.bhproscaffeng.com/</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://www.bhproscaffeng.com/images/internal-grid.jpg</image:loc>
-      <image:title>Internal grid scaffold by B&amp;H Proscaff</image:title>
-    </image:image>
   </url>
   <url>
     <loc>https://www.bhproscaffeng.com/about</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.bhproscaffeng.com/services</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.bhproscaffeng.com/services/elevation-scaffolds</loc>
-    <lastmod>2026-10-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.bhproscaffeng.com/images/elevation.jpg</image:loc>
-      <image:title>Elevation scaffold on a residential block</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://www.bhproscaffeng.com/services/frame-access</loc>
-    <lastmod>2026-10-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.bhproscaffeng.com/images/frame-side.jpg</image:loc>
-      <image:title>Scaffold access on a rising concrete frame</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://www.bhproscaffeng.com/services/internal-scaffolds</loc>
-    <lastmod>2026-10-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.bhproscaffeng.com/images/internal-grid.jpg</image:loc>
-      <image:title>Internal grid scaffold under a roof</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://www.bhproscaffeng.com/services/freestanding-decks</loc>
-    <lastmod>2026-10-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.bhproscaffeng.com/images/deck-day.jpg</image:loc>
-      <image:title>Freestanding scaffold deck</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://www.bhproscaffeng.com/services/mobile-towers</loc>
-    <lastmod>2026-10-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.bhproscaffeng.com/images/mobile-tower.jpg</image:loc>
-      <image:title>Mobile scaffold tower at a column</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://www.bhproscaffeng.com/services/scissor-platforms</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.bhproscaffeng.com/images/scissor-lift.jpg</image:loc>
-      <image:title>Scissor platform for hire</image:title>
-    </image:image>
+  </url>
+  <url>
+    <loc>https://www.bhproscaffeng.com/services/event-stages</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bhproscaffeng.com/services/formwork</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bhproscaffeng.com/services/scaffolding</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bhproscaffeng.com/services/surface-coatings</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bhproscaffeng.com/services/cradle</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bhproscaffeng.com/services/trusswork</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.bhproscaffeng.com/projects</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://www.bhproscaffeng.com/images/frame-front.jpg</image:loc>
-      <image:title>Frame scaffold seen from the front</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.bhproscaffeng.com/images/house-finish.jpg</image:loc>
-      <image:title>Finishing scaffold on a house</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.bhproscaffeng.com/images/deck-dusk.jpg</image:loc>
-      <image:title>Freestanding deck in late light</image:title>
-    </image:image>
   </url>
   <url>
     <loc>https://www.bhproscaffeng.com/approach</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-10-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.bhproscaffeng.com/contact</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-10-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.bhproscaffeng.com/privacy</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-10-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

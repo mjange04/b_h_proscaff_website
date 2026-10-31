@@ -18,7 +18,7 @@ export const PROJECTS: Project[] = [
     alt: "Red internal scaffold grid inside a large hall, with crew working on the upper levels under a metal roof",
     image: "/images/internal-grid.jpg",
     aspect: "portrait",
-    serviceSlug: "internal-scaffolds",
+    serviceSlug: "scaffolding",
     span: "lg:col-span-7",
   },
   {
@@ -29,7 +29,7 @@ export const PROJECTS: Project[] = [
     alt: "Three workers in hard hats using a mobile scaffold tower next to column formwork",
     image: "/images/mobile-tower.jpg",
     aspect: "portrait",
-    serviceSlug: "mobile-towers",
+    serviceSlug: "scaffolding",
     span: "lg:col-span-5",
   },
   {
@@ -40,7 +40,7 @@ export const PROJECTS: Project[] = [
     alt: "Angled view of scaffolding around a multi-storey blockwork building under a clear sky, with a pile of aggregate in front",
     image: "/images/frame-side.jpg",
     aspect: "portrait",
-    serviceSlug: "frame-access",
+    serviceSlug: "scaffolding",
     span: "lg:col-span-4",
   },
   {
@@ -51,7 +51,7 @@ export const PROJECTS: Project[] = [
     alt: "Front view of a multi-storey building under construction, wrapped in scaffolding, with column reinforcement on the roof",
     image: "/images/frame-front.jpg",
     aspect: "portrait",
-    serviceSlug: "frame-access",
+    serviceSlug: "scaffolding",
     span: "lg:col-span-4",
   },
   {
@@ -62,7 +62,7 @@ export const PROJECTS: Project[] = [
     alt: "Scaffold against a white two-storey house, with a worker on the balcony lift and windows being finished",
     image: "/images/house-finish.jpg",
     aspect: "portrait",
-    serviceSlug: "elevation-scaffolds",
+    serviceSlug: "scaffolding",
     span: "lg:col-span-4",
   },
   {
@@ -73,7 +73,7 @@ export const PROJECTS: Project[] = [
     alt: "Long run of steel scaffold along the façade of a cream residential building with green window frames",
     image: "/images/elevation.jpg",
     aspect: "portrait",
-    serviceSlug: "elevation-scaffolds",
+    serviceSlug: "scaffolding",
     span: "lg:col-span-6",
   },
   {
@@ -84,7 +84,7 @@ export const PROJECTS: Project[] = [
     alt: "Long freestanding scaffold deck on a concrete slab in a yard, with trees and site vehicles behind it",
     image: "/images/deck-day.jpg",
     aspect: "landscape",
-    serviceSlug: "freestanding-decks",
+    serviceSlug: "scaffolding",
     span: "lg:col-span-6",
   },
   {
@@ -95,7 +95,7 @@ export const PROJECTS: Project[] = [
     alt: "Freestanding scaffold platform in a yard at dusk, with trucks and a tree behind the guard rails",
     image: "/images/deck-dusk.jpg",
     aspect: "landscape",
-    serviceSlug: "freestanding-decks",
+    serviceSlug: "scaffolding",
     span: "lg:col-span-7",
   },
   {

@@ -68,14 +68,16 @@ export function localBusinessNode() {
       { "@type": "Country", name: "Tanzania" },
     ],
     knowsAbout: [
-      "Scaffolding",
-      "Façade access scaffolds",
-      "Internal scaffolding",
-      "Mobile access towers",
+      "Scaffolding hire and sales",
+      "Formwork hire and sales",
+      "Event stages",
+      "Protective coatings",
       "Scissor lift hire",
+      "Cradle",
+      "Trusswork",
     ],
     description:
-      "B&H Proscaff Engineering Limited erects, alters, and strikes scaffolding in Dar es Salaam, and hires scissor platforms from a base in Salasala.",
+      "B&H Proscaff Engineering Limited provides scaffolding hire and sales, formwork hire and sales, event stages, coatings, scissor platforms, cradles, and trusswork from Salasala, Dar es Salaam.",
   }
 }
 

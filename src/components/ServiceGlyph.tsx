@@ -1,21 +1,23 @@
 import {
   ArrowUpFromLine,
   Building2,
-  Columns2,
+  Cable,
   Layers,
-  LayoutGrid,
-  PanelTop,
+  Music,
+  SprayCan,
+  Triangle,
   type LucideIcon,
 } from "lucide-react"
 import type { ServiceIconName } from "../data/services"
 
 const ICONS: Record<ServiceIconName, LucideIcon> = {
-  elevation: Building2,
-  frame: Layers,
-  internal: LayoutGrid,
-  deck: PanelTop,
-  tower: Columns2,
+  scaffold: Building2,
+  formwork: Layers,
+  truss: Triangle,
+  events: Music,
+  coatings: SprayCan,
   scissor: ArrowUpFromLine,
+  cradle: Cable,
 }
 
 export default function ServiceGlyph({

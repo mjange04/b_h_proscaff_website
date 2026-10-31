@@ -8,7 +8,7 @@ import { breadcrumbNode, localBusinessNode, webPageNode } from "../data/site"
 
 const TITLE = "Scaffolding Services in Dar es Salaam | B&H Proscaff"
 const DESCRIPTION =
-  "Elevation scaffolds, rising-frame access, internal grids, freestanding decks, mobile towers, and scissor platform hire from B&H Proscaff in Dar es Salaam."
+  "Scaffolding hire and sales, formwork hire and sales, event stages, coatings, scissor platforms, cradles, and trusswork from B&H Proscaff in Dar es Salaam."
 
 export default function ServicesPage() {
   return (
@@ -27,7 +27,7 @@ export default function ServicesPage() {
           ]),
           {
             "@type": "ItemList",
-            name: "Scaffolding and access services",
+            name: "Scaffolding hire and sales services",
             itemListElement: SERVICES.map((service, index) => ({
               "@type": "ListItem",
               position: index + 1,
@@ -39,8 +39,8 @@ export default function ServicesPage() {
       />
       <PageHeader
         eyebrow="Services"
-        title="Access, matched to the job."
-        lede="Six arrangements. Each one is a different answer to height, ground, and how long people need to be there. Pick the one that sounds like your site, or send a photograph and we will pick it with you."
+        title="The work we take on."
+        lede="Seven lines of site work. Pick the one that sounds like your job, or send a photograph and we will pick it with you."
         crumbs={[
           { label: "Home", to: "/" },
           { label: "Services" },
@@ -77,7 +77,7 @@ export default function ServicesPage() {
                     to={servicePath(service.slug)}
                     className="mt-6 inline-flex font-bold text-navy underline decoration-orange decoration-2 underline-offset-[6px] hover:text-ember"
                   >
-                    Read how this one is stood
+                    Read this service
                   </Link>
                 </div>
               </Container>
