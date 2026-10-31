@@ -11,6 +11,39 @@ export type Project = {
 
 export const PROJECTS: Project[] = [
   {
+    id: "block-run",
+    title: "Tied access along a block wall",
+    caption:
+      "A working lift along a block elevation, with a steel beam in the run and the boards set for the next course of work.",
+    alt: "Tied tube-and-coupler scaffold along a block wall, with a boarded working lift and a steel beam sitting in the structure",
+    image: "/images/block-run.jpg",
+    aspect: "portrait",
+    serviceSlug: "scaffolding",
+    span: "lg:col-span-4",
+  },
+  {
+    id: "block-end",
+    title: "The same elevation from the end",
+    caption:
+      "Ladder access at the end of the run, boards at the working lift, and the wall left clear at ground level.",
+    alt: "End of a tied scaffold along a block wall, with a boarded upper lift, a ladder bay, and a worker in a hard hat standing beside the steel",
+    image: "/images/block-end.jpg",
+    aspect: "portrait",
+    serviceSlug: "scaffolding",
+    span: "lg:col-span-4",
+  },
+  {
+    id: "warehouse-tower",
+    title: "Mobile tower in a warehouse",
+    caption:
+      "A wheeled tower on a concrete floor, stood high enough for the roof steel, with the working platform boarded and the castors on the slab.",
+    alt: "Tall mobile scaffold tower on castors inside a brick warehouse, with a boarded working platform under a metal roof",
+    image: "/images/warehouse-tower.jpg",
+    aspect: "portrait",
+    serviceSlug: "scaffolding",
+    span: "lg:col-span-4",
+  },
+  {
     id: "internal-grid",
     title: "Internal grid under a roof",
     caption:

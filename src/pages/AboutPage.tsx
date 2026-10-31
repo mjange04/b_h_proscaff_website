@@ -105,8 +105,8 @@ export default function AboutPage() {
       <section className="py-16 sm:py-20">
         <Container className="grid items-center gap-10 lg:grid-cols-2">
           <img
-            src="/images/frame-front.jpg"
-            alt="Scaffold access across the front of a multi-storey concrete and block building"
+            src="/images/block-run.jpg"
+            alt="Tied scaffold along a block wall with a boarded working lift and a steel beam in the run"
             className="aspect-[3/4] w-full object-cover"
             loading="lazy"
           />

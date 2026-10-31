@@ -18,7 +18,7 @@ const FACTS = [
   { label: "On the same call", value: "Scissor platforms" },
 ]
 
-const featured = ["frame-side", "elevation", "mobile-tower"].flatMap((id) => {
+const featured = ["block-run", "warehouse-tower", "block-end"].flatMap((id) => {
   const project = PROJECTS.find((item) => item.id === id)
   return project ? [project] : []
 })

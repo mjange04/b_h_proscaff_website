@@ -206,7 +206,7 @@ export const SERVICES: Service[] = [
         heading: "What we actually stand",
         paragraphs: [
           "On an occupied elevation the steel stays close to the wall so painters, plasterers, and glaziers can work the window line without a ladder as the only plan. On a rising frame the lifts follow the floor plate, with bays that can open for a truck or a hoist. Inside a hall we fill the bay with a grid and board the level under the roof. In a yard we stand an independent deck on its base. For a column or a gate that moves twice in a day, a wheeled tower is usually enough.",
-          "The photographs on this page are from our own sites: an internal grid, a climbing frame, a residential elevation, a house being finished, a yard deck, and a tower beside formwork. That is the work, not a catalogue of systems we do not run.",
+          "The photographs on this page are from our own sites: an internal grid, a climbing frame, a residential elevation, a house being finished, a yard deck, a tower beside formwork, a tied run along a block wall, and a wheeled tower in a warehouse. That is the work, not a catalogue of systems we do not run.",
         ],
       },
       {
@@ -223,6 +223,9 @@ export const SERVICES: Service[] = [
       { src: "/images/house-finish.jpg", alt: "Finishing scaffold on a two-storey house" },
       { src: "/images/deck-day.jpg", alt: "Freestanding scaffold deck on a hard standing" },
       { src: "/images/mobile-tower.jpg", alt: "Crew working from a mobile tower beside column formwork" },
+      { src: "/images/block-run.jpg", alt: "Tied scaffold along a block wall with a boarded working lift" },
+      { src: "/images/block-end.jpg", alt: "End of a tied scaffold run along a block wall, with a ladder bay" },
+      { src: "/images/warehouse-tower.jpg", alt: "Mobile scaffold tower on castors inside a warehouse" },
     ],
   },
   {
