@@ -1,0 +1,27 @@
+{
+  "name": "B&H Proscaff Engineering Limited",
+  "short_name": "B&H Proscaff",
+  "description": "Scaffolding and scissor platform hire from Salasala, Dar es Salaam.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F3F0E8",
+  "theme_color": "#26325C",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

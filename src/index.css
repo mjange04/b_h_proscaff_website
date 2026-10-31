@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: light;
+  }
+
+  body {
+    @apply bg-paper font-sans text-ink antialiased;
+  }
+
+  html[data-nav="open"] .whatsapp-float {
+    display: none;
+  }
+
+  ::selection {
+    background: #26325c;
+    color: #f3f0e8;
+  }
+
+  :focus-visible {
+    outline: 2px solid #26325c;
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.16em] text-navy;
+  }
+
+  .eyebrow::before {
+    content: "";
+    @apply h-2.5 w-2.5 shrink-0 bg-orange;
+  }
+
+  .h-display {
+    @apply font-serif font-semibold tracking-[-0.025em] text-navy;
+  }
+}
