@@ -10,7 +10,7 @@ import { SITE, breadcrumbNode, localBusinessNode, webPageNode } from "../data/si
 
 const TITLE = "Scaffolding Contractor in Dar es Salaam | B&H Proscaff Engineering"
 const DESCRIPTION =
-  "B&H Proscaff Engineering Limited provides scaffolding hire and sales, formwork hire and sales, event stages, coatings, scissor platforms, cradles, and trusswork from Salasala, Dar es Salaam."
+  "B&H Proscaff Engineering Limited provides scaffolding hire and sales, formwork hire and sales, event stages, coatings, scissor platforms, and cradles from Salasala, Dar es Salaam."
 
 const FACTS = [
   { label: "Base", value: "Salasala, Dar es Salaam" },
@@ -49,7 +49,7 @@ export default function HomePage() {
             <span className="block">Your trades do the work.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-ink/80">
-            B&H Proscaff Engineering Limited stands the access, then the rest of the site work that hangs off it: formwork hire, event stages, coatings, cradles, and trusswork. When a machine is the quicker way up, we hire or sell a scissor platform instead.
+            B&H Proscaff Engineering Limited stands the access, then the rest of the site work that hangs off it: formwork hire, event stages, coatings, and cradles. When a machine is the quicker way up, we hire or sell a scissor platform instead.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Button to="/contact">Request a crew</Button>
@@ -94,7 +94,7 @@ export default function HomePage() {
           <div className="lg:col-span-4">
             <p className="eyebrow">Services</p>
             <h2 id="services-heading" className="h-display mt-4 text-4xl sm:text-5xl">
-              Seven lines of site work.
+              Six lines of site work.
             </h2>
             <p className="mt-4 text-base leading-relaxed text-ink/75">
               Platforms, pours, stages, steel, and the lifts people stand on. The list is the work, not a sequence you have to follow.

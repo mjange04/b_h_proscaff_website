@@ -8,7 +8,7 @@ import { breadcrumbNode, localBusinessNode, webPageNode } from "../data/site"
 
 const TITLE = "Scaffolding Services in Dar es Salaam | B&H Proscaff"
 const DESCRIPTION =
-  "Scaffolding hire and sales, formwork hire and sales, event stages, coatings, scissor platforms, cradles, and trusswork from B&H Proscaff in Dar es Salaam."
+  "Scaffolding hire and sales, formwork hire and sales, event stages, coatings, scissor platforms, and cradles from B&H Proscaff in Dar es Salaam."
 
 export default function ServicesPage() {
   return (
@@ -40,7 +40,7 @@ export default function ServicesPage() {
       <PageHeader
         eyebrow="Services"
         title="The work we take on."
-        lede="Seven lines of site work. Pick the one that sounds like your job, or send a photograph and we will pick it with you."
+        lede="Six lines of site work. Pick the one that sounds like your job, or send a photograph and we will pick it with you."
         crumbs={[
           { label: "Home", to: "/" },
           { label: "Services" },

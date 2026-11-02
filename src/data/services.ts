@@ -1,7 +1,6 @@
 export type ServiceIconName =
   | "scaffold"
   | "formwork"
-  | "truss"
   | "events"
   | "coatings"
   | "scissor"
@@ -42,10 +41,14 @@ export const SERVICE_ALIASES: Record<string, string> = {
   "mobile-towers": "scaffolding",
   "event-structures": "event-stages",
   "suspended-access": "cradle",
-  "truss-support": "trusswork",
 }
 
-export const RETIRED_SERVICE_SLUGS = new Set(["site-materials", "crew-training"])
+export const RETIRED_SERVICE_SLUGS = new Set([
+  "site-materials",
+  "crew-training",
+  "trusswork",
+  "truss-support",
+])
 
 export const SERVICES: Service[] = [
   {
@@ -307,48 +310,6 @@ export const SERVICES: Service[] = [
         heading: "Not a shortcut around a proper elevation",
         paragraphs: [
           "If painters need the whole face for a month, a cradle will cost more time than it saves. Tell us the duration. We would rather stand the steel than leave people swinging past the same window twice a day.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "trusswork",
-    title: "Trusswork",
-    seoTitle: "Trusswork in Dar es Salaam | B&H Proscaff",
-    description:
-      "Steel truss and temporary structural support from B&H Proscaff in Dar es Salaam: load paths agreed first, then the members go in, then they come out when the building can take the load.",
-    summary: "Truss and temporary support for roofs, openings, and loads that cannot sit on the scaffold alone.",
-    image: "/images/truss.jpg",
-    imageAlt: "Large steel roof truss spanning an open structure during construction",
-    imageCredit: "Photograph: Wikimedia Commons, steel roof truss (CC BY-SA).",
-    icon: "truss",
-    points: [
-      "Appraisal of what is being carried, and what it is allowed to sit on",
-      "Supply and installation of truss and support members for that load",
-      "Temporary support through an opening, a roof lift, or a weakened bay",
-      "Interfaces with scaffold so the two structures are not sharing a standard by accident",
-      "A written word on when the support can come out",
-      "Strike once the permanent work can take the load",
-    ],
-    needs: [
-      "What is being supported, and for how long",
-      "Drawings or a measured sketch of the span",
-      "What sits underneath: a slab, a wall, or another temporary structure",
-      "Who on site signs the sequence",
-    ],
-    intro:
-      "A scaffold is for people. When the load is a roof, a beam, or a bay that has been cut open, the answer is truss and support — sized for that load, stood on something that can hold it, and taken out when the permanent work is ready.",
-    sections: [
-      {
-        heading: "Do not hang this on a working lift",
-        paragraphs: [
-          "We have seen sites hang a roof member from a scaffold because it was already there. That is not a method. If the load is structural, we treat it as structural: the path to the ground is agreed, the members are installed for that path, and nobody uses the support as a climbing frame.",
-        ],
-      },
-      {
-        heading: "In, then out",
-        paragraphs: [
-          "Temporary support that stays “just in case” becomes part of the building by neglect. We want a date, or a hold-point, for removal. If the permanent work is late, we come back and look again. We do not leave steel in because it is convenient.",
         ],
       },
     ],

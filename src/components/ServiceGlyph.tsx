@@ -5,7 +5,6 @@ import {
   Layers,
   Music,
   SprayCan,
-  Triangle,
   type LucideIcon,
 } from "lucide-react"
 import type { ServiceIconName } from "../data/services"
@@ -13,7 +12,6 @@ import type { ServiceIconName } from "../data/services"
 const ICONS: Record<ServiceIconName, LucideIcon> = {
   scaffold: Building2,
   formwork: Layers,
-  truss: Triangle,
   events: Music,
   coatings: SprayCan,
   scissor: ArrowUpFromLine,

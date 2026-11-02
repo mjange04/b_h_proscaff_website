@@ -18,7 +18,6 @@ const routes = [
   "/services/scaffolding",
   "/services/surface-coatings",
   "/services/cradle",
-  "/services/trusswork",
   "/projects",
   "/approach",
   "/contact",
