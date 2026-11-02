@@ -132,6 +132,61 @@ export const PROJECTS: Project[] = [
     span: "lg:col-span-7",
   },
   {
+    id: "formwork-slab",
+    title: "Slab formwork on a roof pour",
+    caption:
+      "Shutters, beams, and stacked panels on the deck, with the crew setting the next opening before the concrete goes in.",
+    alt: "Workers setting timber and panel formwork on a slab, with a stack of shutters in the foreground",
+    image: "/images/formwork.jpg",
+    aspect: "landscape",
+    serviceSlug: "formwork",
+    span: "lg:col-span-6",
+  },
+  {
+    id: "formwork-falsework",
+    title: "Falsework under a slab",
+    caption:
+      "Props and timber carrying the deck until the slab can take itself. The photograph is the arrangement, not a catalogue of leftover timber.",
+    alt: "Slab falsework around concrete columns, with props and a shuttered soffit under a blue sky",
+    image: "/images/formwork-falsework.jpg",
+    aspect: "landscape",
+    serviceSlug: "formwork",
+    span: "lg:col-span-6",
+  },
+  {
+    id: "coating-blast",
+    title: "Abrasive preparation on steel",
+    caption:
+      "Helmet, hose, and a pipe that has to take a coat. Preparation is the job; the finish comes after the profile is honest.",
+    alt: "Operator in a red blast helmet preparing a steel pipe with an abrasive nozzle",
+    image: "/images/coating-blast.jpg",
+    aspect: "portrait",
+    serviceSlug: "surface-coatings",
+    span: "lg:col-span-4",
+  },
+  {
+    id: "coating-finish",
+    title: "A tank after the coat",
+    caption:
+      "The same class of vessel once the system is on: rails, ladder, and a black finish ready to go back into service.",
+    alt: "Horizontal black-coated tank on plinths, with a caged ladder and top rails",
+    image: "/images/coating-finish.jpg",
+    aspect: "portrait",
+    serviceSlug: "surface-coatings",
+    span: "lg:col-span-4",
+  },
+  {
+    id: "cradle-tank",
+    title: "Cradle on a tank face",
+    caption:
+      "A suspended platform on a tall tank when a full tied scaffold would take longer than the work on the cladding.",
+    alt: "Three workers on a suspended cradle against a tall silver storage tank",
+    image: "/images/cradle.jpg",
+    aspect: "portrait",
+    serviceSlug: "cradle",
+    span: "lg:col-span-4",
+  },
+  {
     id: "scissor",
     title: "Scissor platform",
     caption:

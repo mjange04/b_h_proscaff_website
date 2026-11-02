@@ -142,8 +142,7 @@ export const SERVICES: Service[] = [
       "Formwork hire and sales for reinforced-concrete walls, slabs, and columns in Dar es Salaam, coordinated with B&H Proscaff access so the pour and the scaffold are not fighting for the same bay.",
     summary: "Shutters and falsework for hire or purchase, planned with the access so the pour is not blocked by the steel.",
     image: "/images/formwork.jpg",
-    imageAlt: "Concrete building under construction with wall formwork still in place on the upper storey",
-    imageCredit: "Photograph: Wikimedia Commons, Brazil formwork (public domain).",
+    imageAlt: "Crew setting slab formwork and stacked shutter panels on a roof pour in Dar es Salaam",
     icon: "formwork",
     points: [
       "Wall, column, and slab shutters sized to the pour, not leftover from the last job",
@@ -175,6 +174,15 @@ export const SERVICES: Service[] = [
           "Panels, soldiers, and props leave Salasala for an agreed sequence. They are not a surplus for the site to invent with. If the pour list changes, we re-cut the hire. Leaving a stack of shutters “for later” is a different agreement.",
         ],
       },
+    ],
+    gallery: [
+      { src: "/images/formwork-deck.jpg", alt: "Slab formwork from above, with timber beams, shutter panels, and an opening left in the deck" },
+      { src: "/images/formwork-falsework.jpg", alt: "Slab falsework and props carrying a deck on a concrete frame" },
+      { src: "/images/formwork-side.jpg", alt: "Side of a slab pour, with props, timber, and the shutter soffit still in place" },
+      { src: "/images/formwork-soffit.jpg", alt: "Inside the falsework under a slab, with props standing in the bay" },
+      { src: "/images/formwork-under.jpg", alt: "Looking up at the soffit of a slab shutter from the storey below" },
+      { src: "/images/formwork-access.jpg", alt: "Access left along the wall under the slab formwork" },
+      { src: "/images/formwork-opening.jpg", alt: "Slab formwork with an opening in the deck and the neighbourhood beyond" },
     ],
   },
   {
@@ -238,8 +246,8 @@ export const SERVICES: Service[] = [
     description:
       "B&H Proscaff prepares steel and concrete and applies protective coatings in Dar es Salaam, including work from the same scaffold our access crew is standing.",
     summary: "Blast, profile, and coat — on steel, tanks, and elevations — often from the scaffold already on the face.",
-    image: "/images/house-finish.jpg",
-    imageAlt: "Finishing work on a house elevation, with a working lift at the upper floor",
+    image: "/images/coating-blast.jpg",
+    imageAlt: "Operator in a blast helmet preparing a steel pipe with abrasive, on a live industrial site",
     icon: "coatings",
     points: [
       "Abrasive preparation where the specification calls for a clean, keyed surface",
@@ -265,11 +273,17 @@ export const SERVICES: Service[] = [
         ],
       },
       {
-        heading: "On a live elevation",
+        heading: "On a tank, a pipe, or a live elevation",
         paragraphs: [
-          "A house being finished, as in the photograph, is a different problem from a tank in a yard. People walk underneath. Windows stay in. We plan the access, the drop sheets, and the hours so the coating does not become a complaint from the floor below.",
+          "The photographs on this page are the work: abrasive on pipes and vessels, then a coat on a tank that has to go back into service. A live street or a neighbour below is a different problem again. We plan the access, the containment, and the hours so the blast does not become a complaint from the floor below.",
         ],
       },
+    ],
+    gallery: [
+      { src: "/images/coating-tank.jpg", alt: "Operator blasting a large steel vessel beside a plant building" },
+      { src: "/images/coating-vessel.jpg", alt: "Blast work on top of a tank, with the operator in a helmet and the handrails still in place" },
+      { src: "/images/coating-pipes.jpg", alt: "Abrasive preparation of flanged pipes set on stands, with dust in the air" },
+      { src: "/images/coating-finish.jpg", alt: "A horizontal tank after coating, with ladder and top rails in place" },
     ],
   },
   {
@@ -280,8 +294,7 @@ export const SERVICES: Service[] = [
       "Suspended cradles for façade cleaning, repairs, and coatings in Dar es Salaam, when a tied scaffold is the wrong amount of steel for a tall face.",
     summary: "A cradle on the façade when a full scaffold would take longer than the work on the glass or the cladding.",
     image: "/images/cradle.jpg",
-    imageAlt: "High-rise building under construction, the kind of tall elevation where suspended access is often used",
-    imageCredit: "Photograph: Pexels (free licence).",
+    imageAlt: "Crew working from a suspended cradle on a tall steel tank",
     icon: "cradle",
     points: [
       "Cradles for cleaning, repairs, coatings, and installation on a tall face",
@@ -312,6 +325,9 @@ export const SERVICES: Service[] = [
           "If painters need the whole face for a month, a cradle will cost more time than it saves. Tell us the duration. We would rather stand the steel than leave people swinging past the same window twice a day.",
         ],
       },
+    ],
+    gallery: [
+      { src: "/images/cradle-tank.jpg", alt: "Suspended cradle on a storage tank, with three people on the platform" },
     ],
   }
 

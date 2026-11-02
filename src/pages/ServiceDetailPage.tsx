@@ -22,6 +22,7 @@ export default function ServiceDetailPage() {
 
   const path = `/services/${service.slug}`
   const related = relatedServices(service.slug)
+  const gallery = service.gallery ?? []
 
   return (
     <>
@@ -118,23 +119,27 @@ export default function ServiceDetailPage() {
                 ))}
               </section>
             ))}
-            {service.gallery && service.gallery.length > 0 ? (
-              <section className="mt-12">
-                <h2 className="h-display text-3xl">From our sites</h2>
-                <div className="mt-6 grid grid-cols-2 gap-3">
-                  {service.gallery.map((photo) => (
+          </div>
+
+          {gallery.length > 0 ? (
+            <section className="order-4 lg:col-span-12">
+              <h2 className="h-display text-3xl">From our sites</h2>
+              <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
+                {gallery.map((photo, index) => {
+                  const spanLast = index === gallery.length - 1 && gallery.length % 2 === 1
+                  return (
                     <img
                       key={photo.src}
                       src={photo.src}
                       alt={photo.alt}
-                      className="aspect-[4/5] w-full object-cover"
+                      className={`w-full object-cover ${spanLast ? "aspect-[16/9] sm:col-span-2" : "aspect-[4/3]"}`}
                       loading="lazy"
                     />
-                  ))}
-                </div>
-              </section>
-            ) : null}
-          </div>
+                  )
+                })}
+              </div>
+            </section>
+          ) : null}
         </Container>
       </article>
 
