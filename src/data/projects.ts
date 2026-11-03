@@ -176,6 +176,28 @@ export const PROJECTS: Project[] = [
     span: "lg:col-span-4",
   },
   {
+    id: "event-stage",
+    title: "Outdoor stage on a grass venue",
+    caption:
+      "Scaffold towers, LED screens, and a deck going up on the field. The structure is for the show, then it comes down.",
+    alt: "Event stage under construction on grass, with red scaffold towers, grey LED screens, and a white tent",
+    image: "/images/event-stage.jpg",
+    aspect: "portrait",
+    serviceSlug: "event-stages",
+    span: "lg:col-span-6",
+  },
+  {
+    id: "cradle-glass",
+    title: "Cradle on a glass tower",
+    caption:
+      "A roof-hung platform on a tall glass face, when a tied scaffold would be the wrong amount of steel for the work.",
+    alt: "Suspended cradle at the top of a glass office tower, with drop lines down the façade",
+    image: "/images/cradle-glass.jpg",
+    aspect: "portrait",
+    serviceSlug: "cradle",
+    span: "lg:col-span-3",
+  },
+  {
     id: "cradle-tank",
     title: "Cradle on a tank face",
     caption:
@@ -184,7 +206,7 @@ export const PROJECTS: Project[] = [
     image: "/images/cradle.jpg",
     aspect: "portrait",
     serviceSlug: "cradle",
-    span: "lg:col-span-4",
+    span: "lg:col-span-3",
   },
   {
     id: "scissor",

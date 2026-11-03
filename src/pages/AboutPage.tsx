@@ -5,7 +5,7 @@ import { breadcrumbNode, fullAddress, localBusinessNode, webPageNode } from "../
 
 const TITLE = "About B&H Proscaff Engineering Limited | Salasala"
 const DESCRIPTION =
-  "B&H Proscaff Engineering Limited is based in Salasala, Dar es Salaam. Scaffolding hire and sales, formwork hire and sales, event stages, coatings, platforms, and cradles."
+  "B&H Proscaff Engineering Limited is based in Salasala, Dar es Salaam. Scaffolding hire and sales, formwork hire and sales, event stages, sandblasting and coatings, platforms, and cradles."
 
 const EXPECTATIONS = [
   {
@@ -59,7 +59,7 @@ export default function AboutPage() {
             <h2 className="h-display text-3xl sm:text-4xl">The company is the work.</h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-ink/80">
               <p>
-                B&H Proscaff Engineering Limited stands scaffolds, and the work that sits beside them: formwork hire, event stages, coatings, and cradles. A house being finished, a block still in frame, a hall under a roof, a yard that needs a deck: those are still the jobs. The rest of the list is what those jobs usually pull in next.
+                B&H Proscaff Engineering Limited stands scaffolds, and the work that sits beside them: formwork hire, event stages, sandblasting and coatings, and cradles. A house being finished, a block still in frame, a hall under a roof, a yard that needs a deck: those are still the jobs. The rest of the list is what those jobs usually pull in next.
               </p>
               <p>
                 We do not leave a bundle of tubes and hope the site sorts the ties. The layout is agreed, a crew erects it, and the same crew takes it down. If the programme is in Dar es Salaam, Salasala is a short run for the truck. If the site is further out in Tanzania, say so when you call and we will tell you whether we can man it properly.

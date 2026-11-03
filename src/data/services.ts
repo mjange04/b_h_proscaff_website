@@ -100,8 +100,7 @@ export const SERVICES: Service[] = [
       "Stage decks, roofs, speaker towers, and viewing platforms for events in Dar es Salaam, erected on a tight load-in and struck when the show is over.",
     summary: "Stages, roofs, and towers for a ceremony, a concert, or a brand day — up for the show, gone after the last encore.",
     image: "/images/event-stage.jpg",
-    imageAlt: "Outdoor performance stage built from scaffold towers and truss, with lighting and a crowd in front",
-    imageCredit: "Photograph: Pexels (free licence).",
+    imageAlt: "Outdoor event stage on grass, with scaffold towers, LED screens, and the deck being built",
     icon: "events",
     points: [
       "Stage decks and risers sized to the production, not to leftover scaffold bays",
@@ -132,6 +131,11 @@ export const SERVICES: Service[] = [
           "Strike is part of the hire. Leaving a stage “until Monday” because the crew is tired is how venues lose their deposit. We plan the take-down with the same people who put it up.",
         ],
       },
+    ],
+    gallery: [
+      { src: "/images/event-stage-deck.jpg", alt: "Stage deck and LED screens on a scaffold frame, with truss and cases on the grass" },
+      { src: "/images/event-stage-loadin.jpg", alt: "Load-in on a grass venue, with flight cases in front of the stage and scaffold towers behind" },
+      { src: "/images/event-stage-field.jpg", alt: "Wide view of an outdoor stage under construction, with tents and scaffold towers on the field" },
     ],
   },
   {
@@ -241,10 +245,10 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "surface-coatings",
-    title: "Surface preparation and coatings",
-    seoTitle: "Sandblasting and Protective Coatings | B&H Proscaff Dar es Salaam",
+    title: "Sandblasting and coatings",
+    seoTitle: "Sandblasting and Coatings in Dar es Salaam | B&H Proscaff",
     description:
-      "B&H Proscaff prepares steel and concrete and applies protective coatings in Dar es Salaam, including work from the same scaffold our access crew is standing.",
+      "Sandblasting and protective coatings from B&H Proscaff in Dar es Salaam, including work from the same scaffold our access crew is standing.",
     summary: "Blast, profile, and coat — on steel, tanks, and elevations — often from the scaffold already on the face.",
     image: "/images/coating-blast.jpg",
     imageAlt: "Operator in a blast helmet preparing a steel pipe with abrasive, on a live industrial site",
@@ -293,8 +297,8 @@ export const SERVICES: Service[] = [
     description:
       "Suspended cradles for façade cleaning, repairs, and coatings in Dar es Salaam, when a tied scaffold is the wrong amount of steel for a tall face.",
     summary: "A cradle on the façade when a full scaffold would take longer than the work on the glass or the cladding.",
-    image: "/images/cradle.jpg",
-    imageAlt: "Crew working from a suspended cradle on a tall steel tank",
+    image: "/images/cradle-glass.jpg",
+    imageAlt: "Suspended cradle on a glass office tower, with drop lines running down the façade",
     icon: "cradle",
     points: [
       "Cradles for cleaning, repairs, coatings, and installation on a tall face",
@@ -327,6 +331,9 @@ export const SERVICES: Service[] = [
       },
     ],
     gallery: [
+      { src: "/images/cradle-glass-sky.jpg", alt: "Cradle hung high on a glass tower under a clear sky" },
+      { src: "/images/cradle-glass-wide.jpg", alt: "Glass elevation with a roof-hung cradle and drop lines" },
+      { src: "/images/cradle.jpg", alt: "Crew working from a suspended cradle on a tall steel tank" },
       { src: "/images/cradle-tank.jpg", alt: "Suspended cradle on a storage tank, with three people on the platform" },
     ],
   }
