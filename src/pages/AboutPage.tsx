@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Seo from "../components/Seo"
 import PageHeader from "../components/PageHeader"
 import { Container, EnquiryBand } from "../components/ui"
@@ -59,7 +60,11 @@ export default function AboutPage() {
             <h2 className="h-display text-3xl sm:text-4xl">The company is the work.</h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-ink/80">
               <p>
-                B&H Proscaff Engineering Limited stands scaffolds, and the work that sits beside them: scaffold event stages, cradles, sandblasting and coatings, and formwork hire. A house being finished, a block still in frame, a hall under a roof, a yard that needs a deck: those are still the jobs. The rest of the list is what those jobs usually pull in next.
+                B&H Proscaff Engineering Limited stands{" "}
+                <Link to="/services" className="font-semibold text-navy underline decoration-orange decoration-2 underline-offset-4 hover:text-ember">
+                  scaffolding hire and sales in Dar es Salaam
+                </Link>
+                , and the work that sits beside them: scaffold event stages, cradles, sandblasting and coatings, and formwork hire. A house being finished, a block still in frame, a hall under a roof, a yard that needs a deck: those are still the jobs. The rest of the list is what those jobs usually pull in next.
               </p>
               <p>
                 We do not leave a bundle of tubes and hope the site sorts the ties. The layout is agreed, a crew erects it, and the same crew dismantles it. If the programme is in Dar es Salaam, Salasala is a short run for the truck. If the site is further out in Tanzania, say so when you call and we will tell you whether we can man it properly.
@@ -114,7 +119,11 @@ export default function AboutPage() {
             <p className="eyebrow">Who calls</p>
             <h2 className="h-display mt-4 text-4xl">Main contractors, owners, and the trade that needs the height.</h2>
             <p className="mt-5 leading-relaxed text-ink/80">
-              We work with people who would rather have the access arranged than improvised on the morning the plaster starts. If you are the site agent, send the elevation. If you are the owner of a house, send the front of the building. Either way the first answer is which arrangement belongs there.
+              We work with people who would rather have the access arranged than improvised on the morning the plaster starts. If you are the site agent,{" "}
+              <Link to="/contact" className="font-semibold text-navy underline decoration-orange decoration-2 underline-offset-4 hover:text-ember">
+                WhatsApp a photograph of the elevation in Dar es Salaam
+              </Link>
+              . If you are the owner of a house, send the front of the building. Either way the first answer is which arrangement belongs there.
             </p>
             <p className="mt-4 leading-relaxed text-ink/80">
               Read the sequence we actually follow, from the walk-round to the lorry leaving with the steel, on the method page.

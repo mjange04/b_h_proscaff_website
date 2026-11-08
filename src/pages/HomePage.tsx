@@ -51,7 +51,11 @@ export default function HomePage() {
             <span className="block">Your trades do the work.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-ink/80">
-            B&H Proscaff Engineering Limited hires and sells scaffolding in Dar es Salaam. We walk the site, erect the steel, alter it as the job moves, and dismantle it when that part of the work is finished.
+            B&H Proscaff Engineering Limited is the Salasala crew for{" "}
+            <Link to="/about" className="font-semibold text-navy underline decoration-orange decoration-2 underline-offset-4 hover:text-ember">
+              scaffolding hire in Dar es Salaam
+            </Link>
+            . We walk the site, erect the steel, alter it as the job moves, and dismantle it when that part of the work is finished.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Button to="/contact">Request a crew</Button>
@@ -231,7 +235,7 @@ export default function HomePage() {
             to="/about"
             className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-[0.14em] text-navy"
           >
-            About the crew
+            Who stands the scaffold in Salasala
             <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
           </Link>
         </Container>
