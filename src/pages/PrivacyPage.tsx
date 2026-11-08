@@ -62,7 +62,7 @@ export default function PrivacyPage() {
           <div>
             <h2 className="h-display text-3xl">The map</h2>
             <p className="mt-3">
-              The contact page embeds a map from OpenStreetMap so you can see Salasala. Loading that map can send your IP address to OpenStreetMap’s servers. You can use the page without the map: the telephone numbers and email are written above it.
+              The contact page embeds a Google Map of our listing, B&H Proscaff Engineering LTD in Salasala. Loading that map can send your IP address to Google. You can use the page without the map: the telephone numbers and email are written above it.
             </p>
           </div>
           <div>

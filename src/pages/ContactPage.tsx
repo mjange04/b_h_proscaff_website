@@ -96,7 +96,7 @@ export default function ContactPage() {
     setNotice("Your email app should open with the enquiry ready to send.")
   }
 
-  const mapSrc = `https://www.openstreetmap.org/export/embed.html?bbox=39.16%2C-6.72%2C39.23%2C-6.66&layer=mapnik&marker=${SITE.map.lat}%2C${SITE.map.lng}`
+  const mapSrc = SITE.map.embed
 
   return (
     <>
@@ -179,7 +179,7 @@ export default function ContactPage() {
               </li>
             </ul>
             <p className="mt-8 text-sm leading-relaxed text-ink/70">
-              The map marks Salasala, the neighbourhood we work from. It is not a surveyed plot pin. Call either number and we will direct you, or we will come to the site.
+              The map is our Google listing: B&H Proscaff Engineering LTD in Salasala. Call either number if you need a landmark on the way in, or we will come to the site.
             </p>
           </div>
 
@@ -273,32 +273,15 @@ export default function ContactPage() {
         </Container>
       </section>
 
-      <section className="border-t border-line" aria-label="Map of Salasala, Dar es Salaam">
+      <section className="border-t border-line" aria-label="Map of B&H Proscaff Engineering LTD, Salasala">
         <iframe
-          title="Map of Salasala, Dar es Salaam"
+          title="B&H Proscaff Engineering LTD on Google Maps"
           src={mapSrc}
           className="h-[420px] w-full border-0"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
+          allowFullScreen
         />
-        <Container className="flex flex-wrap gap-4 py-4 text-sm font-semibold">
-          <a
-            href={`https://www.openstreetmap.org/?mlat=${SITE.map.lat}&mlon=${SITE.map.lng}#map=14/${SITE.map.lat}/${SITE.map.lng}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-navy underline decoration-orange decoration-2 underline-offset-4"
-          >
-            Open in OpenStreetMap
-          </a>
-          <a
-            href="https://www.google.com/maps/search/?api=1&query=Salasala%2C%20Dar%20es%20Salaam%2C%20Tanzania"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-navy underline decoration-orange decoration-2 underline-offset-4"
-          >
-            Open in Google Maps
-          </a>
-        </Container>
       </section>
     </>
   )

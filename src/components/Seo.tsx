@@ -55,7 +55,7 @@ export default function Seo({
     upsertMeta("name", "author", "B&H Proscaff Engineering Limited")
     upsertMeta("name", "geo.region", "TZ-02")
     upsertMeta("name", "geo.placename", "Dar es Salaam")
-    upsertMeta("name", "geo.position", "-6.689;39.194")
+    upsertMeta("name", "geo.position", `${SITE.map.lat};${SITE.map.lng}`)
     upsertMeta("property", "og:title", title)
     upsertMeta("property", "og:description", description)
     upsertMeta("property", "og:url", url)
