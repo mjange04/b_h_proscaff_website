@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone, Share2 } from "lucide-react"
+import { Clock, Mail, MapPin, Phone, Share2 } from "lucide-react"
 import { useState, type FormEvent, type ReactNode } from "react"
 import Seo from "../components/Seo"
 import PageHeader from "../components/PageHeader"
@@ -140,6 +140,13 @@ export default function ContactPage() {
                 <div>
                   <p className="text-sm font-bold text-navy">Base</p>
                   <p className="text-ink/80">{fullAddress()}</p>
+                </div>
+              </li>
+              <li className="flex gap-3">
+                <Clock className="mt-1 h-5 w-5 shrink-0 text-ember" aria-hidden="true" />
+                <div>
+                  <p className="text-sm font-bold text-navy">Hours</p>
+                  <p className="text-ink/80">{SITE.hours.display}</p>
                 </div>
               </li>
               {SITE.phones.map((phone) => (

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import Seo from "../components/Seo"
 import PageHeader from "../components/PageHeader"
 import { Container, EnquiryBand } from "../components/ui"
-import { breadcrumbNode, fullAddress, localBusinessNode, webPageNode } from "../data/site"
+import { SITE, breadcrumbNode, fullAddress, localBusinessNode, webPageNode } from "../data/site"
 
 const TITLE = "About B&H Proscaff Engineering | Salasala, Tanzania"
 const DESCRIPTION =
@@ -70,7 +70,7 @@ export default function AboutPage() {
                 We do not leave a bundle of tubes and hope the site sorts the ties. The layout is agreed, a crew erects it, and the same crew dismantles it. If the programme is in Dar es Salaam, Salasala is a short run for the truck. If the site is further out in Tanzania, say so when you call and we will tell you whether we can man it properly.
               </p>
               <p>
-                The address is {fullAddress()}. There is no need to invent a longer story than that. The photographs are the record of the steel.
+                The address is {fullAddress()}. Hours are {SITE.hours.display}. There is no need to invent a longer story than that. The photographs are the record of the steel.
               </p>
             </div>
           </div>

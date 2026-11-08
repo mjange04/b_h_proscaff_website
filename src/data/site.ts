@@ -19,6 +19,18 @@ export const SITE = {
     city: "Dar es Salaam",
     country: "Tanzania",
     region: "East Africa",
+    postalCode: "8989",
+  },
+  hours: {
+    display: "Daily 7 a.m.–midnight",
+    openingHours: "Mo-Su 07:00-24:00",
+    specification: [
+      {
+        days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        opens: "07:00",
+        closes: "24:00",
+      },
+    ],
   },
   map: {
     lat: -6.7149448,
@@ -74,8 +86,17 @@ export function localBusinessNode() {
       "@type": "PostalAddress",
       streetAddress: SITE.address.line,
       addressLocality: SITE.address.city,
+      addressRegion: SITE.address.city,
+      postalCode: SITE.address.postalCode,
       addressCountry: "TZ",
     },
+    openingHours: SITE.hours.openingHours,
+    openingHoursSpecification: SITE.hours.specification.map((slot) => ({
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: slot.days,
+      opens: slot.opens,
+      closes: slot.closes,
+    })),
     geo: {
       "@type": "GeoCoordinates",
       latitude: SITE.map.lat,
