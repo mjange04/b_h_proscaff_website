@@ -69,14 +69,14 @@ export function localBusinessNode() {
     ],
     knowsAbout: [
       "Scaffolding hire and sales",
-      "Formwork hire and sales",
-      "Event stages",
-      "Sandblasting and coatings",
-      "Scissor lift hire",
+      "Scaffold Event Stages",
       "Cradle",
+      "Scissor lift hire",
+      "Sandblasting and coatings",
+      "Formwork hire and sales",
     ],
     description:
-      "B&H Proscaff Engineering Limited provides scaffolding hire and sales, formwork hire and sales, event stages, sandblasting and coatings, scissor platforms, and cradles from Salasala, Dar es Salaam.",
+      "B&H Proscaff Engineering Limited provides scaffolding hire and sales, scaffold event stages, cradles, scissor platforms, sandblasting and coatings, and formwork hire and sales from Salasala, Dar es Salaam.",
   }
 }
 

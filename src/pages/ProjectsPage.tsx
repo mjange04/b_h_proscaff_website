@@ -34,7 +34,7 @@ export default function ProjectsPage() {
       <PageHeader
         eyebrow="Projects"
         title="Photographs from the scaffold."
-        lede="A record of the arrangements we stand: tied elevations, formwork and falsework, event stages, sandblasting and coatings, cradles, mobile towers, and a scissor platform. No invented project names — the caption describes the work."
+        lede="A record of the arrangements we stand: tied elevations, formwork and falsework, scaffold event stages, sandblasting and coatings, cradles, mobile towers, and a scissor platform. No invented project names — the caption describes the work."
         crumbs={[
           { label: "Home", to: "/" },
           { label: "Projects" },

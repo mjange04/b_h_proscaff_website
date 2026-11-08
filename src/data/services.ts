@@ -39,7 +39,8 @@ export const SERVICE_ALIASES: Record<string, string> = {
   "internal-scaffolds": "scaffolding",
   "freestanding-decks": "scaffolding",
   "mobile-towers": "scaffolding",
-  "event-structures": "event-stages",
+  "event-structures": "scaffold-event-stages",
+  "event-stages": "scaffold-event-stages",
   "suspended-access": "cradle",
 }
 
@@ -51,6 +52,153 @@ export const RETIRED_SERVICE_SLUGS = new Set([
 ])
 
 export const SERVICES: Service[] = [
+  {
+    slug: "scaffolding",
+    title: "Scaffolding hire and sales",
+    seoTitle: "Scaffolding Hire and Sales in Dar es Salaam | B&H Proscaff",
+    description:
+      "B&H Proscaff hires and sells scaffolding in Dar es Salaam: tied elevations, frame access, internal grids, freestanding decks, and mobile towers, erected and dismantled by our crew.",
+    summary: "Hire the steel for the job, or buy the stock — tied elevations, climbing frames, internal grids, decks, and towers.",
+    image: "/images/internal-grid.jpg",
+    imageAlt: "Dense internal scaffold filling a hall, with working levels set high under the roof",
+    icon: "scaffold",
+    points: [
+      "Tied access along façades, balconies, and window lines",
+      "External lifts that follow a concrete frame as the floors climb",
+      "Internal grids for halls, shells, and overhead work",
+      "Independent decks on hard ground when there is no wall to tie to",
+      "Mobile towers for a column, a gate, or a task that moves during the day",
+      "Short- and long-term hire, plus sales of tubes, fittings, boards, and towers",
+      "Inspection, alteration, and dismantling by the same crew that put it up",
+    ],
+    needs: [
+      "The address, and a photograph of the face, hall, or ground",
+      "How high the work goes, and how long the steel must stay",
+      "Whether people still use the ground floor, a gate, or a hoist route",
+      "Which trade will stand on the lifts first",
+    ],
+    intro:
+      "You can hire the scaffold for the weeks you need it, or buy the stock if your programme will keep it busy. Either way we walk the site, name the arrangement, erect it, and dismantle it when that part of the work is finished.",
+    sections: [
+      {
+        heading: "What we actually stand",
+        paragraphs: [
+          "On an occupied elevation the steel stays close to the wall so painters, plasterers, and glaziers can work the window line without a ladder as the only plan. On a rising frame the lifts follow the floor plate, with bays that can open for a truck or a hoist. Inside a hall we fill the bay with a grid and board the level under the roof. In a yard we stand an independent deck on its base. For a column or a gate that moves twice in a day, a wheeled tower is usually enough.",
+          "The photographs on this page are from our own sites: an internal grid, a climbing frame, a residential elevation, a house being finished, a yard deck, a tower beside formwork, a tied run along a block wall, and a wheeled tower in a warehouse. That is the work, not a catalogue of systems we do not run.",
+        ],
+      },
+      {
+        heading: "One crew from the first standard to dismantling",
+        paragraphs: [
+          "Other trades do not add boards, pull ties, or sheet a bay because it suits the next hour. If the programme changes, call us. A scaffold that has been quietly rebuilt by three gangs is no longer the one we handed over.",
+          "Sheeting, if you want dust kept in, is a separate decision. A sheeted bay catches wind. We only add it when the ties and bracing are there for it.",
+        ],
+      },
+    ],
+    gallery: [
+      { src: "/images/frame-side.jpg", alt: "Tied scaffold along a multi-storey concrete and block frame" },
+      { src: "/images/elevation.jpg", alt: "Tube-and-coupler elevation along balconies and windows" },
+      { src: "/images/house-finish.jpg", alt: "Finishing scaffold on a two-storey house" },
+      { src: "/images/deck-day.jpg", alt: "Freestanding scaffold deck on a hard standing" },
+      { src: "/images/mobile-tower.jpg", alt: "Crew working from a mobile tower beside column formwork" },
+      { src: "/images/block-run.jpg", alt: "Tied scaffold along a block wall with a boarded working lift" },
+      { src: "/images/block-end.jpg", alt: "End of a tied scaffold run along a block wall, with a ladder bay" },
+      { src: "/images/warehouse-tower.jpg", alt: "Mobile scaffold tower on castors inside a warehouse" },
+    ],
+  },
+  {
+    slug: "scaffold-event-stages",
+    title: "Scaffold Event Stages",
+    seoTitle: "Scaffold Event Stages in Dar es Salaam | B&H Proscaff",
+    description:
+      "Stage decks, roofs, speaker towers, and viewing platforms for events in Dar es Salaam, erected on a tight load-in and dismantled when the show is over.",
+    summary: "Stages, roofs, and towers for a ceremony, a concert, or a brand day — up for the show, dismantled after the last encore.",
+    image: "/images/event-stage.jpg",
+    imageAlt: "Outdoor event stage on grass, with scaffold towers, LED screens, and the deck being built",
+    icon: "events",
+    points: [
+      "Stage decks and risers sized to the production, not to leftover scaffold bays",
+      "Roof and canopy frames with hang points agreed with the lighting and sound crew",
+      "Towers for speakers, screens, and scenic pieces",
+      "Viewing stands and crew access that do not mix with the public route",
+      "Load-in and dismantling that match the venue’s hours, not our convenience",
+      "A walk-round with the producer before anyone hangs a lamp",
+    ],
+    needs: [
+      "The date, the venue, and how many hours you have to get in",
+      "A plan or a sketch of the stage, roof, and hang points",
+      "Ground: grass, slab, or a slope",
+      "Who is the on-site contact during load-in",
+    ],
+    intro:
+      "An event is not a building programme. You get a few hours, a piece of ground, and a list of hang points. We stand the stage, the roof, and the towers so the technical crew can load in — and we dismantle them when the site has to be a field again.",
+    sections: [
+      {
+        heading: "The show is the deadline",
+        paragraphs: [
+          "We work backwards from doors. If the roof cannot take the lamps you want, we say so before the truck is booked, not at dusk. Wind on a sheeted roof is a real limit. We would rather reduce the hang than leave a structure we will not stand under.",
+        ],
+      },
+      {
+        heading: "Then we dismantle it",
+        paragraphs: [
+          "Dismantling is part of the hire. Leaving a stage “until Monday” because the crew is tired is how venues lose their deposit. We plan the dismantling with the same people who put it up.",
+        ],
+      },
+    ],
+    gallery: [
+      { src: "/images/event-stage-deck.jpg", alt: "Stage deck and LED screens on a scaffold frame, with truss and cases on the grass" },
+      { src: "/images/event-stage-loadin.jpg", alt: "Load-in on a grass venue, with flight cases in front of the stage and scaffold towers behind" },
+      { src: "/images/event-stage-field.jpg", alt: "Wide view of an outdoor stage under construction, with tents and scaffold towers on the field" },
+    ],
+  },
+  {
+    slug: "cradle",
+    title: "Cradle",
+    seoTitle: "Cradle Hire in Dar es Salaam | B&H Proscaff",
+    description:
+      "Suspended cradles for façade cleaning, repairs, and coatings in Dar es Salaam, when a tied scaffold is the wrong amount of steel for a tall face.",
+    summary: "A cradle on the façade when a full scaffold would take longer than the work on the glass or the cladding.",
+    image: "/images/cradle-glass.jpg",
+    imageAlt: "Suspended cradle on a glass office tower, with drop lines running down the façade",
+    icon: "cradle",
+    points: [
+      "Cradles for cleaning, repairs, coatings, and installation on a tall face",
+      "A building that can actually take the suspension — we will say no if it cannot",
+      "Operator briefing and a simple rescue conversation before anyone goes over the edge",
+      "Coordination with the building manager on hours, drop zones, and wind",
+      "Inspection of the equipment before it is hung",
+      "A recommendation to stand a tied scaffold instead when the work is wide and long",
+    ],
+    needs: [
+      "The height of the face, and photographs of the roof or suspension points",
+      "What the crew will do from the cradle, and for how many days",
+      "Who manages the building, so we can agree drop zones",
+      "Wind exposure and neighbouring properties",
+    ],
+    intro:
+      "Some elevations are too high, too occupied, or too short in duration for a full tied scaffold. A cradle hangs the working platform from above. It is the right tool for a strip of façade, not for a house that needs three weeks of plaster.",
+    sections: [
+      {
+        heading: "The building has to accept it",
+        paragraphs: [
+          "We look at the roof, the parapet, and the drop before we promise a cradle. If there is nowhere honest to hang from, the answer is scaffold or a different machine. We do not invent an anchorage from a photograph of a similar tower.",
+        ],
+      },
+      {
+        heading: "Not a shortcut around a proper elevation",
+        paragraphs: [
+          "If painters need the whole face for a month, a cradle will cost more time than it saves. Tell us the duration. We would rather stand the steel than leave people swinging past the same window twice a day.",
+        ],
+      },
+    ],
+    gallery: [
+      { src: "/images/cradle-glass-sky.jpg", alt: "Cradle hung high on a glass tower under a clear sky" },
+      { src: "/images/cradle-glass-wide.jpg", alt: "Glass elevation with a roof-hung cradle and drop lines" },
+      { src: "/images/cradle.jpg", alt: "Crew working from a suspended cradle on a tall steel tank" },
+      { src: "/images/cradle-tank.jpg", alt: "Suspended cradle on a storage tank, with three people on the platform" },
+    ],
+  },
   {
     slug: "scissor-platforms",
     title: "Scissor platform hire and sales",
@@ -90,157 +238,6 @@ export const SERVICES: Service[] = [
           "If you will need the same machine every month, ask about a sale. The briefing still happens. A platform that sits in a yard with nobody who has been shown the controls is not a saving.",
         ],
       },
-    ],
-  },
-  {
-    slug: "event-stages",
-    title: "Event stages",
-    seoTitle: "Event Stages in Dar es Salaam | B&H Proscaff",
-    description:
-      "Stage decks, roofs, speaker towers, and viewing platforms for events in Dar es Salaam, erected on a tight load-in and struck when the show is over.",
-    summary: "Stages, roofs, and towers for a ceremony, a concert, or a brand day — up for the show, gone after the last encore.",
-    image: "/images/event-stage.jpg",
-    imageAlt: "Outdoor event stage on grass, with scaffold towers, LED screens, and the deck being built",
-    icon: "events",
-    points: [
-      "Stage decks and risers sized to the production, not to leftover scaffold bays",
-      "Roof and canopy frames with hang points agreed with the lighting and sound crew",
-      "Towers for speakers, screens, and scenic pieces",
-      "Viewing stands and crew access that do not mix with the public route",
-      "Load-in and strike that match the venue’s hours, not our convenience",
-      "A walk-round with the producer before anyone hangs a lamp",
-    ],
-    needs: [
-      "The date, the venue, and how many hours you have to get in",
-      "A plan or a sketch of the stage, roof, and hang points",
-      "Ground: grass, slab, or a slope",
-      "Who is the on-site contact during load-in",
-    ],
-    intro:
-      "An event is not a building programme. You get a few hours, a piece of ground, and a list of hang points. We stand the stage, the roof, and the towers so the technical crew can load in — and we take them down when the site has to be a field again.",
-    sections: [
-      {
-        heading: "The show is the deadline",
-        paragraphs: [
-          "We work backwards from doors. If the roof cannot take the lamps you want, we say so before the truck is booked, not at dusk. Wind on a sheeted roof is a real limit. We would rather reduce the hang than leave a structure we will not stand under.",
-        ],
-      },
-      {
-        heading: "Then it comes down",
-        paragraphs: [
-          "Strike is part of the hire. Leaving a stage “until Monday” because the crew is tired is how venues lose their deposit. We plan the take-down with the same people who put it up.",
-        ],
-      },
-    ],
-    gallery: [
-      { src: "/images/event-stage-deck.jpg", alt: "Stage deck and LED screens on a scaffold frame, with truss and cases on the grass" },
-      { src: "/images/event-stage-loadin.jpg", alt: "Load-in on a grass venue, with flight cases in front of the stage and scaffold towers behind" },
-      { src: "/images/event-stage-field.jpg", alt: "Wide view of an outdoor stage under construction, with tents and scaffold towers on the field" },
-    ],
-  },
-  {
-    slug: "formwork",
-    title: "Formwork hire and sales",
-    seoTitle: "Formwork Hire and Sales in Dar es Salaam | B&H Proscaff",
-    description:
-      "Formwork hire and sales for reinforced-concrete walls, slabs, and columns in Dar es Salaam, coordinated with B&H Proscaff access so the pour and the scaffold are not fighting for the same bay.",
-    summary: "Shutters and falsework for hire or purchase, planned with the access so the pour is not blocked by the steel.",
-    image: "/images/formwork.jpg",
-    imageAlt: "Crew setting slab formwork and stacked shutter panels on a roof pour in Dar es Salaam",
-    icon: "formwork",
-    points: [
-      "Wall, column, and slab shutters sized to the pour, not leftover from the last job",
-      "Falsework that carries the wet concrete until the member can take itself",
-      "Strike and reuse planned so panels are not buried behind the next lift of scaffold",
-      "Coordination with our access crew when the same elevation needs both",
-      "A clear hold-point before anyone pours against a shutter we have not checked",
-      "Short- and long-term hire, or a sale when the pour programme makes owning the panels cheaper",
-    ],
-    needs: [
-      "Which members are pouring next, and in what order",
-      "The storey height and the thickness of the slab or wall",
-      "Whether our scaffold is already standing on that elevation",
-      "How many days the shutter must stay before it can come off",
-    ],
-    intro:
-      "Concrete does not wait for a tidy scaffold. Hire the shutters for the pours you have, or buy the panels if the programme will keep them turning. Either way we set the formwork so the pour can happen, then strike it in time for the next lift — including when our own scaffold is on the same face.",
-    sections: [
-      {
-        heading: "The pour comes first on that day",
-        paragraphs: [
-          "A wall shutter that cannot be plumbed because a scaffold ledger is in the way is not a surprise we should discover at 6 a.m. We walk the elevation with the access layout in mind: which bays stay, which open for the pour, and who is allowed in the bay while the concrete is going in.",
-          "Falsework is the part people forget until the slab is wet. Tell us the span and the load. We will not guess a prop centres from a photograph of a similar building.",
-        ],
-      },
-      {
-        heading: "Not a timber store",
-        paragraphs: [
-          "Panels, soldiers, and props leave Salasala for an agreed sequence. They are not a surplus for the site to invent with. If the pour list changes, we re-cut the hire. Leaving a stack of shutters “for later” is a different agreement.",
-        ],
-      },
-    ],
-    gallery: [
-      { src: "/images/formwork-deck.jpg", alt: "Slab formwork from above, with timber beams, shutter panels, and an opening left in the deck" },
-      { src: "/images/formwork-falsework.jpg", alt: "Slab falsework and props carrying a deck on a concrete frame" },
-      { src: "/images/formwork-side.jpg", alt: "Side of a slab pour, with props, timber, and the shutter soffit still in place" },
-      { src: "/images/formwork-soffit.jpg", alt: "Inside the falsework under a slab, with props standing in the bay" },
-      { src: "/images/formwork-under.jpg", alt: "Looking up at the soffit of a slab shutter from the storey below" },
-      { src: "/images/formwork-access.jpg", alt: "Access left along the wall under the slab formwork" },
-      { src: "/images/formwork-opening.jpg", alt: "Slab formwork with an opening in the deck and the neighbourhood beyond" },
-    ],
-  },
-  {
-    slug: "scaffolding",
-    title: "Scaffolding hire and sales",
-    seoTitle: "Scaffolding Hire and Sales in Dar es Salaam | B&H Proscaff",
-    description:
-      "B&H Proscaff hires and sells scaffolding in Dar es Salaam: tied elevations, frame access, internal grids, freestanding decks, and mobile towers, erected and struck by our crew.",
-    summary: "Hire the steel for the job, or buy the stock — tied elevations, climbing frames, internal grids, decks, and towers.",
-    image: "/images/internal-grid.jpg",
-    imageAlt: "Dense internal scaffold filling a hall, with working levels set high under the roof",
-    icon: "scaffold",
-    points: [
-      "Tied access along façades, balconies, and window lines",
-      "External lifts that follow a concrete frame as the floors climb",
-      "Internal grids for halls, shells, and overhead work",
-      "Independent decks on hard ground when there is no wall to tie to",
-      "Mobile towers for a column, a gate, or a task that moves during the day",
-      "Short- and long-term hire, plus sales of tubes, fittings, boards, and towers",
-      "Inspection, alteration, and strike by the same crew that put it up",
-    ],
-    needs: [
-      "The address, and a photograph of the face, hall, or ground",
-      "How high the work goes, and how long the steel must stay",
-      "Whether people still use the ground floor, a gate, or a hoist route",
-      "Which trade will stand on the lifts first",
-    ],
-    intro:
-      "You can hire the scaffold for the weeks you need it, or buy the stock if your programme will keep it busy. Either way we walk the site, name the arrangement, erect it, and strike it when that part of the work is finished.",
-    sections: [
-      {
-        heading: "What we actually stand",
-        paragraphs: [
-          "On an occupied elevation the steel stays close to the wall so painters, plasterers, and glaziers can work the window line without a ladder as the only plan. On a rising frame the lifts follow the floor plate, with bays that can open for a truck or a hoist. Inside a hall we fill the bay with a grid and board the level under the roof. In a yard we stand an independent deck on its base. For a column or a gate that moves twice in a day, a wheeled tower is usually enough.",
-          "The photographs on this page are from our own sites: an internal grid, a climbing frame, a residential elevation, a house being finished, a yard deck, a tower beside formwork, a tied run along a block wall, and a wheeled tower in a warehouse. That is the work, not a catalogue of systems we do not run.",
-        ],
-      },
-      {
-        heading: "One crew from the first standard to the strike",
-        paragraphs: [
-          "Other trades do not add boards, pull ties, or sheet a bay because it suits the next hour. If the programme changes, call us. A scaffold that has been quietly rebuilt by three gangs is no longer the one we handed over.",
-          "Sheeting, if you want dust kept in, is a separate decision. A sheeted bay catches wind. We only add it when the ties and bracing are there for it.",
-        ],
-      },
-    ],
-    gallery: [
-      { src: "/images/frame-side.jpg", alt: "Tied scaffold along a multi-storey concrete and block frame" },
-      { src: "/images/elevation.jpg", alt: "Tube-and-coupler elevation along balconies and windows" },
-      { src: "/images/house-finish.jpg", alt: "Finishing scaffold on a two-storey house" },
-      { src: "/images/deck-day.jpg", alt: "Freestanding scaffold deck on a hard standing" },
-      { src: "/images/mobile-tower.jpg", alt: "Crew working from a mobile tower beside column formwork" },
-      { src: "/images/block-run.jpg", alt: "Tied scaffold along a block wall with a boarded working lift" },
-      { src: "/images/block-end.jpg", alt: "End of a tied scaffold run along a block wall, with a ladder bay" },
-      { src: "/images/warehouse-tower.jpg", alt: "Mobile scaffold tower on castors inside a warehouse" },
     ],
   },
   {
@@ -291,50 +288,54 @@ export const SERVICES: Service[] = [
     ],
   },
   {
-    slug: "cradle",
-    title: "Cradle",
-    seoTitle: "Cradle Hire in Dar es Salaam | B&H Proscaff",
+    slug: "formwork",
+    title: "Formwork hire and sales",
+    seoTitle: "Formwork Hire and Sales in Dar es Salaam | B&H Proscaff",
     description:
-      "Suspended cradles for façade cleaning, repairs, and coatings in Dar es Salaam, when a tied scaffold is the wrong amount of steel for a tall face.",
-    summary: "A cradle on the façade when a full scaffold would take longer than the work on the glass or the cladding.",
-    image: "/images/cradle-glass.jpg",
-    imageAlt: "Suspended cradle on a glass office tower, with drop lines running down the façade",
-    icon: "cradle",
+      "Formwork hire and sales for reinforced-concrete walls, slabs, and columns in Dar es Salaam, coordinated with B&H Proscaff access so the pour and the scaffold are not fighting for the same bay.",
+    summary: "Shutters and falsework for hire or purchase, planned with the access so the pour is not blocked by the steel.",
+    image: "/images/formwork.jpg",
+    imageAlt: "Crew setting slab formwork and stacked shutter panels on a roof pour in Dar es Salaam",
+    icon: "formwork",
     points: [
-      "Cradles for cleaning, repairs, coatings, and installation on a tall face",
-      "A building that can actually take the suspension — we will say no if it cannot",
-      "Operator briefing and a simple rescue conversation before anyone goes over the edge",
-      "Coordination with the building manager on hours, drop zones, and wind",
-      "Inspection of the equipment before it is hung",
-      "A recommendation to stand a tied scaffold instead when the work is wide and long",
+      "Wall, column, and slab shutters sized to the pour, not leftover from the last job",
+      "Falsework that carries the wet concrete until the member can take itself",
+      "Dismantle and reuse planned so panels are not buried behind the next lift of scaffold",
+      "Coordination with our access crew when the same elevation needs both",
+      "A clear hold-point before anyone pours against a shutter we have not checked",
+      "Short- and long-term hire, or a sale when the pour programme makes owning the panels cheaper",
     ],
     needs: [
-      "The height of the face, and photographs of the roof or suspension points",
-      "What the crew will do from the cradle, and for how many days",
-      "Who manages the building, so we can agree drop zones",
-      "Wind exposure and neighbouring properties",
+      "Which members are pouring next, and in what order",
+      "The storey height and the thickness of the slab or wall",
+      "Whether our scaffold is already standing on that elevation",
+      "How many days the shutter must stay before it can come off",
     ],
     intro:
-      "Some elevations are too high, too occupied, or too short in duration for a full tied scaffold. A cradle hangs the working platform from above. It is the right tool for a strip of façade, not for a house that needs three weeks of plaster.",
+      "Concrete does not wait for a tidy scaffold. Hire the shutters for the pours you have, or buy the panels if the programme will keep them turning. Either way we set the formwork so the pour can happen, then dismantle it in time for the next lift — including when our own scaffold is on the same face.",
     sections: [
       {
-        heading: "The building has to accept it",
+        heading: "The pour comes first on that day",
         paragraphs: [
-          "We look at the roof, the parapet, and the drop before we promise a cradle. If there is nowhere honest to hang from, the answer is scaffold or a different machine. We do not invent an anchorage from a photograph of a similar tower.",
+          "A wall shutter that cannot be plumbed because a scaffold ledger is in the way is not a surprise we should discover at 6 a.m. We walk the elevation with the access layout in mind: which bays stay, which open for the pour, and who is allowed in the bay while the concrete is going in.",
+          "Falsework is the part people forget until the slab is wet. Tell us the span and the load. We will not guess a prop centres from a photograph of a similar building.",
         ],
       },
       {
-        heading: "Not a shortcut around a proper elevation",
+        heading: "Not a timber store",
         paragraphs: [
-          "If painters need the whole face for a month, a cradle will cost more time than it saves. Tell us the duration. We would rather stand the steel than leave people swinging past the same window twice a day.",
+          "Panels, soldiers, and props leave Salasala for an agreed sequence. They are not a surplus for the site to invent with. If the pour list changes, we re-cut the hire. Leaving a stack of shutters “for later” is a different agreement.",
         ],
       },
     ],
     gallery: [
-      { src: "/images/cradle-glass-sky.jpg", alt: "Cradle hung high on a glass tower under a clear sky" },
-      { src: "/images/cradle-glass-wide.jpg", alt: "Glass elevation with a roof-hung cradle and drop lines" },
-      { src: "/images/cradle.jpg", alt: "Crew working from a suspended cradle on a tall steel tank" },
-      { src: "/images/cradle-tank.jpg", alt: "Suspended cradle on a storage tank, with three people on the platform" },
+      { src: "/images/formwork-deck.jpg", alt: "Slab formwork from above, with timber beams, shutter panels, and an opening left in the deck" },
+      { src: "/images/formwork-falsework.jpg", alt: "Slab falsework and props carrying a deck on a concrete frame" },
+      { src: "/images/formwork-side.jpg", alt: "Side of a slab pour, with props, timber, and the shutter soffit still in place" },
+      { src: "/images/formwork-soffit.jpg", alt: "Inside the falsework under a slab, with props standing in the bay" },
+      { src: "/images/formwork-under.jpg", alt: "Looking up at the soffit of a slab shutter from the storey below" },
+      { src: "/images/formwork-access.jpg", alt: "Access left along the wall under the slab formwork" },
+      { src: "/images/formwork-opening.jpg", alt: "Slab formwork with an opening in the deck and the neighbourhood beyond" },
     ],
   }
 

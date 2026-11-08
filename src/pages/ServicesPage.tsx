@@ -8,7 +8,7 @@ import { breadcrumbNode, localBusinessNode, webPageNode } from "../data/site"
 
 const TITLE = "Scaffolding Services in Dar es Salaam | B&H Proscaff"
 const DESCRIPTION =
-  "Scaffolding hire and sales, formwork hire and sales, event stages, sandblasting and coatings, scissor platforms, and cradles from B&H Proscaff in Dar es Salaam."
+  "Scaffolding hire and sales, scaffold event stages, cradles, scissor platforms, sandblasting and coatings, and formwork hire and sales from B&H Proscaff in Dar es Salaam."
 
 export default function ServicesPage() {
   return (

@@ -15,7 +15,7 @@ export default function Footer() {
             <img src="/logo.png" alt="" className="h-16 w-auto" width={313} height={246} />
           </Link>
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-ink/75">
-            Scaffold engineering from Salasala. We erect the access, alter it as the job moves, and strike it when that part of the work is finished.
+            Scaffold engineering from Salasala. We erect the access, alter it as the job moves, and dismantle it when that part of the work is finished.
           </p>
         </div>
 

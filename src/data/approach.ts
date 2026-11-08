@@ -25,16 +25,16 @@ export const STEPS = [
   },
   {
     number: "05",
-    title: "Alter, then strike",
-    short: "We change it when the building changes. Then we take it away.",
-    body: "Frames rise, windows arrive, a hoist needs a gap. Call us and we alter the scaffold. When that part of the programme is finished we strike it, load the steel, and leave the ground clear. Leaving a pile of fittings “for later” is a different agreement, not the default.",
+    title: "Alter, then dismantle",
+    short: "We change it when the building changes. Then we dismantle it.",
+    body: "Frames rise, windows arrive, a hoist needs a gap. Call us and we alter the scaffold. When that part of the programme is finished we dismantle it, load the steel, and leave the ground clear. Leaving a pile of fittings “for later” is a different agreement, not the default.",
   },
 ] as const
 
 export const CONDUCT = [
-  "One crew stays with the scaffold from the first standard to the strike.",
+  "One crew stays with the scaffold from the first standard to dismantling.",
   "Ties, bracing, and guard rails are not a stock of parts for other trades to borrow.",
-  "While steel is going up or coming down, people who are not in the crew stay out of that bay.",
+  "While steel is going up or being dismantled, people who are not in the crew stay out of that bay.",
   "Helmets on the crew are the normal condition of the job, not a pose for the photograph.",
   "We stop the next lift if the base, the tie, or the weather is wrong. The delay is cheaper than the alternative.",
 ] as const

@@ -5,9 +5,9 @@ import { Container, EnquiryBand } from "../components/ui"
 import { CONDUCT, STEPS } from "../data/approach"
 import { breadcrumbNode, localBusinessNode, webPageNode } from "../data/site"
 
-const TITLE = "How We Erect and Strike Scaffold | B&H Proscaff"
+const TITLE = "How We Erect and Dismantle Scaffold | B&H Proscaff"
 const DESCRIPTION =
-  "How B&H Proscaff plans a scaffold in Dar es Salaam: site walk, agreed layout, erection, handover, alteration, and strike. One crew from start to finish."
+  "How B&H Proscaff plans a scaffold in Dar es Salaam: site walk, agreed layout, erection, handover, alteration, and dismantling. One crew from start to finish."
 
 const ICONS: LucideIcon[] = [Ruler, ClipboardCheck, Truck, HardHat, Undo2]
 
@@ -30,7 +30,7 @@ export default function ApproachPage() {
       />
       <PageHeader
         eyebrow="How we work"
-        title="From the walk-round to the strike."
+        title="From the walk-round to dismantling."
         lede="A scaffold is a sequence, not a pile of steel. This is the order we follow on a Dar es Salaam site, whether the job is a house front or a hall full of grid."
         crumbs={[
           { label: "Home", to: "/" },

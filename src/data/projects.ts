@@ -179,11 +179,11 @@ export const PROJECTS: Project[] = [
     id: "event-stage",
     title: "Outdoor stage on a grass venue",
     caption:
-      "Scaffold towers, LED screens, and a deck going up on the field. The structure is for the show, then it comes down.",
+      "Scaffold towers, LED screens, and a deck going up on the field. The structure is for the show, then we dismantle it.",
     alt: "Event stage under construction on grass, with red scaffold towers, grey LED screens, and a white tent",
     image: "/images/event-stage.jpg",
     aspect: "portrait",
-    serviceSlug: "event-stages",
+    serviceSlug: "scaffold-event-stages",
     span: "lg:col-span-6",
   },
   {

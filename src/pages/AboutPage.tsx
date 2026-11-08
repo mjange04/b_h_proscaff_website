@@ -5,7 +5,7 @@ import { breadcrumbNode, fullAddress, localBusinessNode, webPageNode } from "../
 
 const TITLE = "About B&H Proscaff Engineering Limited | Salasala"
 const DESCRIPTION =
-  "B&H Proscaff Engineering Limited is based in Salasala, Dar es Salaam. Scaffolding hire and sales, formwork hire and sales, event stages, sandblasting and coatings, platforms, and cradles."
+  "B&H Proscaff Engineering Limited is based in Salasala, Dar es Salaam. Scaffolding hire and sales, scaffold event stages, cradles, scissor platforms, sandblasting and coatings, and formwork hire and sales."
 
 const EXPECTATIONS = [
   {
@@ -59,10 +59,10 @@ export default function AboutPage() {
             <h2 className="h-display text-3xl sm:text-4xl">The company is the work.</h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-ink/80">
               <p>
-                B&H Proscaff Engineering Limited stands scaffolds, and the work that sits beside them: formwork hire, event stages, sandblasting and coatings, and cradles. A house being finished, a block still in frame, a hall under a roof, a yard that needs a deck: those are still the jobs. The rest of the list is what those jobs usually pull in next.
+                B&H Proscaff Engineering Limited stands scaffolds, and the work that sits beside them: scaffold event stages, cradles, sandblasting and coatings, and formwork hire. A house being finished, a block still in frame, a hall under a roof, a yard that needs a deck: those are still the jobs. The rest of the list is what those jobs usually pull in next.
               </p>
               <p>
-                We do not leave a bundle of tubes and hope the site sorts the ties. The layout is agreed, a crew erects it, and the same crew takes it down. If the programme is in Dar es Salaam, Salasala is a short run for the truck. If the site is further out in Tanzania, say so when you call and we will tell you whether we can man it properly.
+                We do not leave a bundle of tubes and hope the site sorts the ties. The layout is agreed, a crew erects it, and the same crew dismantles it. If the programme is in Dar es Salaam, Salasala is a short run for the truck. If the site is further out in Tanzania, say so when you call and we will tell you whether we can man it properly.
               </p>
               <p>
                 The address is {fullAddress()}. There is no need to invent a longer story than that. The photographs are the record of the steel.
@@ -88,7 +88,7 @@ export default function AboutPage() {
         <Container className="grid gap-10 lg:grid-cols-12">
           <blockquote className="border-l-4 border-orange pl-6 lg:col-span-5">
             <p className="font-serif text-3xl font-semibold leading-snug text-navy sm:text-4xl">
-              The scaffold is there for someone else’s trade. It has to be ready before they climb, and gone when they finish.
+              The scaffold is there for someone else’s trade. It has to be ready before they climb, and dismantled when they finish.
             </p>
           </blockquote>
           <dl className="grid gap-8 sm:grid-cols-2 lg:col-span-7">

@@ -10,11 +10,11 @@ import { SITE, breadcrumbNode, localBusinessNode, webPageNode } from "../data/si
 
 const TITLE = "Scaffolding Contractor in Dar es Salaam | B&H Proscaff Engineering"
 const DESCRIPTION =
-  "B&H Proscaff Engineering Limited provides scaffolding hire and sales, formwork hire and sales, event stages, sandblasting and coatings, scissor platforms, and cradles from Salasala, Dar es Salaam."
+  "B&H Proscaff Engineering Limited provides scaffolding hire and sales, scaffold event stages, cradles, scissor platforms, sandblasting and coatings, and formwork hire and sales from Salasala, Dar es Salaam."
 
 const FACTS = [
   { label: "Base", value: "Salasala, Dar es Salaam" },
-  { label: "The cycle", value: "Erect, alter, and strike" },
+  { label: "The cycle", value: "Erect, alter, and dismantle" },
   { label: "On the same call", value: "Scissor platforms" },
 ]
 
@@ -49,7 +49,7 @@ export default function HomePage() {
             <span className="block">Your trades do the work.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-ink/80">
-            B&H Proscaff Engineering Limited stands the access, then the rest of the site work that hangs off it: formwork hire, event stages, sandblasting and coatings, and cradles. When a machine is the quicker way up, we hire or sell a scissor platform instead.
+            B&H Proscaff Engineering Limited stands the access, then the rest of the site work that hangs off it: scaffold event stages, cradles, sandblasting and coatings, and formwork hire. When a machine is the quicker way up, we hire or sell a scissor platform instead.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Button to="/contact">Request a crew</Button>
@@ -168,7 +168,7 @@ export default function HomePage() {
           <p className="eyebrow">Method</p>
           <div className="mt-4 flex flex-wrap items-end justify-between gap-6">
             <h2 id="method-heading" className="h-display max-w-xl text-4xl sm:text-5xl">
-              From the walk-round to the strike.
+              From the walk-round to dismantling.
             </h2>
             <TextLink to="/approach">How a job runs</TextLink>
           </div>
