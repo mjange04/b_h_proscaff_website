@@ -10,12 +10,14 @@ import { SITE, breadcrumbNode, localBusinessNode, webPageNode } from "../data/si
 
 const TITLE = "Scaffold Engineering from Salasala | B&H Proscaff Dar es Salaam"
 const DESCRIPTION =
-  "B&H Proscaff Engineering Limited stands the access in Dar es Salaam — hire, alter, and dismantle from Salasala, with stages, cradles, platforms, coatings, and formwork on the same call."
+  "Scaffolding hire and sales in Dar es Salaam. B&H Proscaff Engineering Limited erects, alters, and dismantles tied access, internal grids, decks, and towers from Salasala."
+
+const HOME_SERVICE_SLUGS = ["scaffolding", "cradle", "scissor-platforms"] as const
 
 const FACTS = [
   { label: "Base", value: "Salasala, Dar es Salaam" },
   { label: "The cycle", value: "Erect, alter, and dismantle" },
-  { label: "On the same call", value: "Scissor platforms" },
+  { label: "On the same call", value: "Hire or sales" },
 ]
 
 const featured = ["block-run", "warehouse-tower", "block-end"].flatMap((id) => {
@@ -49,7 +51,7 @@ export default function HomePage() {
             <span className="block">Your trades do the work.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-ink/80">
-            B&H Proscaff Engineering Limited stands the access, then the rest of the site work that hangs off it: scaffold event stages, cradles, sandblasting and coatings, and formwork hire. When a machine is the quicker way up, we hire or sell a scissor platform instead.
+            B&H Proscaff Engineering Limited hires and sells scaffolding in Dar es Salaam. We walk the site, erect the steel, alter it as the job moves, and dismantle it when that part of the work is finished.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Button to="/contact">Request a crew</Button>
@@ -94,17 +96,20 @@ export default function HomePage() {
           <div className="lg:col-span-4">
             <p className="eyebrow">Services</p>
             <h2 id="services-heading" className="h-display mt-4 text-4xl sm:text-5xl">
-              Six lines of site work.
+              The access we stand.
             </h2>
             <p className="mt-4 text-base leading-relaxed text-ink/75">
-              Platforms, pours, stages, steel, and the lifts people stand on. The list is the work, not a sequence you have to follow.
+              Tied elevations, internal grids, decks, and towers. Hire the steel for the job, or buy the stock.
             </p>
             <TextLink to="/services" className="mt-6">
               All services
             </TextLink>
           </div>
           <ol className="divide-y divide-line border-y border-line lg:col-span-8">
-            {SERVICES.map((service, index) => (
+            {HOME_SERVICE_SLUGS.flatMap((slug) => {
+              const service = SERVICES.find((item) => item.slug === slug)
+              return service ? [service] : []
+            }).map((service, index) => (
               <li key={service.slug}>
                 <Link
                   to={servicePath(service.slug)}

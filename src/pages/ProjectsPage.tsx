@@ -10,7 +10,7 @@ import { breadcrumbNode, localBusinessNode, webPageNode } from "../data/site"
 
 const TITLE = "Photographs from B&H Proscaff Sites | Dar es Salaam"
 const DESCRIPTION =
-  "Tied elevations, event stages, cradles, sandblasting, formwork, and a scissor platform — captions of the work, not invented project names."
+  "Photographs of B&H Proscaff scaffolding in Dar es Salaam: tied elevations, internal grids, decks, and mobile towers. Captions of the work, not invented project names."
 
 export default function ProjectsPage() {
   const [active, setActive] = useState<number | null>(null)
@@ -34,7 +34,7 @@ export default function ProjectsPage() {
       <PageHeader
         eyebrow="Projects"
         title="Photographs from the scaffold."
-        lede="A record of the arrangements we stand: tied elevations, formwork and falsework, scaffold event stages, sandblasting and coatings, cradles, mobile towers, and a scissor platform. No invented project names — the caption describes the work."
+        lede="A record of the scaffolds we stand: tied elevations, internal grids, decks, and mobile towers. No invented project names — the caption describes the work."
         crumbs={[
           { label: "Home", to: "/" },
           { label: "Projects" },
