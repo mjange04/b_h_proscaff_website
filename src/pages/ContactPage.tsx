@@ -1,7 +1,8 @@
-import { Mail, MapPin, Phone } from "lucide-react"
+import { Mail, MapPin, Phone, Share2 } from "lucide-react"
 import { useState, type FormEvent, type ReactNode } from "react"
 import Seo from "../components/Seo"
 import PageHeader from "../components/PageHeader"
+import SocialLinks from "../components/SocialLinks"
 import WhatsAppIcon from "../components/WhatsAppIcon"
 import { Button, Container } from "../components/ui"
 import { SERVICES } from "../data/services"
@@ -167,6 +168,13 @@ export default function ContactPage() {
                     {SITE.email}
                   </a>
                   <p className="text-sm text-ink/70">www.bhproscaffeng.com</p>
+                </div>
+              </li>
+              <li className="flex gap-3">
+                <Share2 className="mt-1 h-5 w-5 shrink-0 text-ember" aria-hidden="true" />
+                <div>
+                  <p className="text-sm font-bold text-navy">@{SITE.socialHandle}</p>
+                  <SocialLinks className="mt-2" />
                 </div>
               </li>
             </ul>

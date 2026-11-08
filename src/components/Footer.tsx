@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import { SERVICES, servicePath } from "../data/services"
 import { NAV, SITE, fullAddress, whatsappHref } from "../data/site"
+import SocialLinks from "./SocialLinks"
 import WhatsAppIcon from "./WhatsAppIcon"
 import { Container } from "./ui"
 
@@ -73,6 +74,8 @@ export default function Footer() {
               </a>
             </p>
           </address>
+          <p className="mt-4 text-xs font-bold uppercase tracking-[0.16em] text-ember">@{SITE.socialHandle}</p>
+          <SocialLinks className="mt-2" />
         </div>
       </Container>
 

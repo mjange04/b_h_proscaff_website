@@ -8,6 +8,12 @@ export const SITE = {
     { display: "+255 798 472 769", tel: "+255798472769", whatsapp: "255798472769" },
     { display: "+255 798 486 837", tel: "+255798486837", whatsapp: "255798486837" },
   ],
+  socialHandle: "bhproscaffengltd",
+  social: [
+    { name: "Instagram", href: "https://www.instagram.com/bhproscaffengltd/" },
+    { name: "Threads", href: "https://www.threads.net/@bhproscaffengltd" },
+    { name: "Facebook", href: "https://www.facebook.com/profile.php?id=61596206787900" },
+  ],
   address: {
     line: "Salasala",
     city: "Dar es Salaam",
@@ -59,6 +65,7 @@ export function localBusinessNode() {
     logo: `${SITE.url}/logo.png`,
     email: SITE.email,
     telephone: SITE.phones.map((phone) => phone.tel),
+    sameAs: SITE.social.map((profile) => profile.href),
     address: {
       "@type": "PostalAddress",
       streetAddress: SITE.address.line,
