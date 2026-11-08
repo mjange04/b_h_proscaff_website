@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom"
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Layout from "./components/Layout"
 import ScrollToTop from "./components/ScrollToTop"
 import AboutPage from "./pages/AboutPage"
@@ -11,23 +11,33 @@ import ProjectsPage from "./pages/ProjectsPage"
 import ServiceDetailPage from "./pages/ServiceDetailPage"
 import ServicesPage from "./pages/ServicesPage"
 
-export default function App() {
+function Root() {
   return (
     <>
       <ScrollToTop />
-      <Routes>
-        <Route element={<Layout />}>
-          <Route index element={<HomePage />} />
-          <Route path="about" element={<AboutPage />} />
-          <Route path="services" element={<ServicesPage />} />
-          <Route path="services/:slug" element={<ServiceDetailPage />} />
-          <Route path="projects" element={<ProjectsPage />} />
-          <Route path="approach" element={<ApproachPage />} />
-          <Route path="contact" element={<ContactPage />} />
-          <Route path="privacy" element={<PrivacyPage />} />
-          <Route path="*" element={<NotFoundPage />} />
-        </Route>
-      </Routes>
+      <Layout />
     </>
   )
+}
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />,
+    children: [
+      { index: true, element: <HomePage /> },
+      { path: "about", element: <AboutPage /> },
+      { path: "services", element: <ServicesPage /> },
+      { path: "services/:slug", element: <ServiceDetailPage /> },
+      { path: "projects", element: <ProjectsPage /> },
+      { path: "approach", element: <ApproachPage /> },
+      { path: "contact", element: <ContactPage /> },
+      { path: "privacy", element: <PrivacyPage /> },
+      { path: "*", element: <NotFoundPage /> },
+    ],
+  },
+])
+
+export default function App() {
+  return <RouterProvider router={router} />
 }

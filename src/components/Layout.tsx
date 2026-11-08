@@ -15,7 +15,7 @@ export default function Layout() {
       </a>
       <Header />
       <main id="content" className="flex-1">
-        <Outlet />
+        <Outlet key={pathname} />
       </main>
       <Footer />
       {pathname === "/contact" ? null : <WhatsAppFloat />}

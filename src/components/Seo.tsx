@@ -88,5 +88,5 @@ export default function Seo({
     })
   }, [title, description, url, image, noindex, jsonKey])
 
-  return <link rel="canonical" href={url} />
+  return null
 }
