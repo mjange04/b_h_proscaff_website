@@ -1,4 +1,5 @@
 import { useLayoutEffect } from "react"
+import { SITE, pageUrl } from "../data/site"
 
 type JsonLd = Record<string, unknown>
 
@@ -11,8 +12,6 @@ type SeoProps = {
   jsonLd?: JsonLd[]
 }
 
-const SITE_URL = "https://www.bhproscaffeng.com"
-
 function upsertMeta(attr: "name" | "property", key: string, content: string) {
   const selector = `meta[${attr}="${key}"]`
   let element = document.head.querySelector(selector)
@@ -24,14 +23,15 @@ function upsertMeta(attr: "name" | "property", key: string, content: string) {
   element.setAttribute("content", content)
 }
 
-function upsertLink(rel: string, href: string) {
-  let element = document.head.querySelector(`link[rel="${rel}"]`)
-  if (!element) {
-    element = document.createElement("link")
-    element.setAttribute("rel", rel)
-    document.head.appendChild(element)
+function setCanonical(href: string) {
+  const links = Array.from(document.head.querySelectorAll('link[rel="canonical"]'))
+  const primary = links[0] ?? document.createElement("link")
+  if (!links[0]) {
+    primary.setAttribute("rel", "canonical")
+    document.head.appendChild(primary)
   }
-  element.setAttribute("href", href)
+  primary.setAttribute("href", href)
+  links.slice(1).forEach((element) => element.remove())
 }
 
 export default function Seo({
@@ -42,12 +42,12 @@ export default function Seo({
   noindex = false,
   jsonLd = [],
 }: SeoProps) {
+  const url = pageUrl(path)
   const jsonKey = JSON.stringify(jsonLd)
 
   useLayoutEffect(() => {
     document.title = title
-    const url = `${SITE_URL}${path}`
-    const imageUrl = image.startsWith("http") ? image : `${SITE_URL}${image}`
+    const imageUrl = image.startsWith("http") ? image : `${SITE.url}${image}`
     const robots = noindex ? "noindex, follow" : "index, follow, max-image-preview:large"
 
     upsertMeta("name", "description", description)
@@ -68,7 +68,7 @@ export default function Seo({
     upsertMeta("name", "twitter:title", title)
     upsertMeta("name", "twitter:description", description)
     upsertMeta("name", "twitter:image", imageUrl)
-    upsertLink("canonical", url)
+    setCanonical(url)
 
     const data = JSON.parse(jsonKey) as JsonLd[]
     let script = document.getElementById("page-jsonld")
@@ -86,7 +86,7 @@ export default function Seo({
       "@context": "https://schema.org",
       "@graph": data,
     })
-  }, [title, description, path, image, noindex, jsonKey])
+  }, [title, description, url, image, noindex, jsonKey])
 
-  return null
+  return <link rel="canonical" href={url} />
 }

@@ -5,7 +5,7 @@ import PageHeader from "../components/PageHeader"
 import ServiceGlyph from "../components/ServiceGlyph"
 import { Button, Container, TextLink } from "../components/ui"
 import { RETIRED_SERVICE_SLUGS, SERVICE_ALIASES, getService, relatedServices, servicePath } from "../data/services"
-import { SITE, breadcrumbNode, localBusinessNode, webPageNode, whatsappHref } from "../data/site"
+import { SITE, breadcrumbNode, localBusinessNode, pageUrl, webPageNode, whatsappHref } from "../data/site"
 import NotFoundPage from "./NotFoundPage"
 
 export default function ServiceDetailPage() {
@@ -44,7 +44,7 @@ export default function ServiceDetailPage() {
             name: service.title,
             serviceType: service.title,
             description: service.description,
-            url: `${SITE.url}${path}`,
+            url: pageUrl(path),
             image: `${SITE.url}${service.image}`,
             areaServed: { "@type": "City", name: "Dar es Salaam" },
             provider: { "@id": `${SITE.url}/#business` },

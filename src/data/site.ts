@@ -34,6 +34,13 @@ export function fullAddress() {
   return `${line}, ${city}, ${country}, ${region}`
 }
 
+export function pageUrl(path: string) {
+  const clean = (path || "/").split("?")[0].split("#")[0].trim()
+  if (!clean || clean === "/") return `${SITE.url}/`
+  const prefixed = clean.startsWith("/") ? clean : `/${clean}`
+  return `${SITE.url}${prefixed.replace(/\/+$/, "")}`
+}
+
 export function whatsappHref(text?: string, index = 0) {
   const phone = SITE.phones[index]?.whatsapp ?? SITE.phones[0].whatsapp
   const base = `https://wa.me/${phone}`
@@ -87,17 +94,19 @@ export function breadcrumbNode(items: { name: string; path: string }[]) {
       "@type": "ListItem",
       position: index + 1,
       name: item.name,
-      item: `${SITE.url}${item.path}`,
+      item: pageUrl(item.path),
     })),
   }
 }
 
 export function webPageNode(title: string, description: string, path: string) {
+  const url = pageUrl(path)
   return {
     "@type": "WebPage",
+    "@id": `${url}#webpage`,
     name: title,
     description,
-    url: `${SITE.url}${path}`,
+    url,
     isPartOf: {
       "@type": "WebSite",
       name: SITE.name,
