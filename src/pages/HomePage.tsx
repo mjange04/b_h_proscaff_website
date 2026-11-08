@@ -1,5 +1,6 @@
 import { ArrowUpRight, Check } from "lucide-react"
 import { Link } from "react-router-dom"
+import GoogleReviews from "../components/GoogleReviews"
 import Seo from "../components/Seo"
 import ServiceGlyph from "../components/ServiceGlyph"
 import { Button, Container, EnquiryBand, TextLink } from "../components/ui"
@@ -171,6 +172,8 @@ export default function HomePage() {
           </div>
         </Container>
       </section>
+
+      <GoogleReviews />
 
       <section className="py-16 sm:py-24" aria-labelledby="method-heading">
         <Container>

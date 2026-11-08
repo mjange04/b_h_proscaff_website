@@ -1,3 +1,5 @@
+import { GOOGLE_RATING, GOOGLE_REVIEWS } from "./reviews"
+
 export const SITE = {
   name: "B&H Proscaff Engineering Limited",
   shortName: "B&H Proscaff",
@@ -38,6 +40,8 @@ export const SITE = {
     label: "B&H Proscaff Engineering LTD, Salasala, Dar es Salaam",
     google:
       "https://www.google.com/maps/place/B%26H+Proscaff+Engineering+LTD/@-6.7149448,39.1802744,17z/data=!3m1!4b1!4m6!3m5!1s0x185c4dede2d3dbc1:0x1cef05cb94ca0797!8m2!3d-6.7149448!4d39.1802744!16s%2Fg%2F11z25qy_3w",
+    reviews:
+      "https://www.google.com/maps/place/B%26H+Proscaff+Engineering+LTD/@-6.7149448,39.1802744,17z/data=!4m8!3m7!1s0x185c4dede2d3dbc1:0x1cef05cb94ca0797!8m2!3d-6.7149448!4d39.1802744!9m1!1b1!16s%2Fg%2F11z25qy_3w",
     embed:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.9!2d39.1802744!3d-6.7149448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4dede2d3dbc1%3A0x1cef05cb94ca0797!2sB%26H%20Proscaff%20Engineering%20LTD!5e0!3m2!1sen!2stz!4v0!5m2!1sen!2stz",
   },
@@ -116,6 +120,23 @@ export function localBusinessNode() {
     ],
     description:
       "B&H Proscaff Engineering Limited erects, alters, and dismantles scaffolding in Dar es Salaam from a base in Salasala.",
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: String(GOOGLE_RATING.value),
+      reviewCount: String(GOOGLE_RATING.count),
+      bestRating: String(GOOGLE_RATING.best),
+      worstRating: "1",
+    },
+    review: GOOGLE_REVIEWS.map((item) => ({
+      "@type": "Review",
+      author: { "@type": "Person", name: item.author },
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: String(item.rating),
+        bestRating: "5",
+      },
+      reviewBody: item.body,
+    })),
   }
 }
 
