@@ -5,9 +5,9 @@ import { Container, EnquiryBand } from "../components/ui"
 import { CONDUCT, STEPS } from "../data/approach"
 import { breadcrumbNode, localBusinessNode, webPageNode } from "../data/site"
 
-const TITLE = "How We Erect and Dismantle Scaffold | B&H Proscaff"
+const TITLE = "From Walk-Round to Dismantling | How B&H Proscaff Works"
 const DESCRIPTION =
-  "How B&H Proscaff plans a scaffold in Dar es Salaam: site walk, agreed layout, erection, handover, alteration, and dismantling. One crew from start to finish."
+  "Site walk, agreed layout, erection, handover, then alteration and dismantling by the same crew. The order we follow on a Dar es Salaam scaffold."
 
 const ICONS: LucideIcon[] = [Ruler, ClipboardCheck, Truck, HardHat, Undo2]
 

@@ -55,9 +55,9 @@ export const SERVICES: Service[] = [
   {
     slug: "scaffolding",
     title: "Scaffolding hire and sales",
-    seoTitle: "Scaffolding Hire and Sales in Dar es Salaam | B&H Proscaff",
+    seoTitle: "Scaffolding Hire and Sales | Tied Access in Dar es Salaam",
     description:
-      "B&H Proscaff hires and sells scaffolding in Dar es Salaam: tied elevations, frame access, internal grids, freestanding decks, and mobile towers, erected and dismantled by our crew.",
+      "Hire the steel for the weeks you need it, or buy the stock. Tied elevations, internal grids, decks, and mobile towers, erected and dismantled by our crew.",
     summary: "Hire the steel for the job, or buy the stock — tied elevations, climbing frames, internal grids, decks, and towers.",
     image: "/images/internal-grid.jpg",
     imageAlt: "Dense internal scaffold filling a hall, with working levels set high under the roof",
@@ -109,9 +109,9 @@ export const SERVICES: Service[] = [
   {
     slug: "scaffold-event-stages",
     title: "Scaffold Event Stages",
-    seoTitle: "Scaffold Event Stages in Dar es Salaam | B&H Proscaff",
+    seoTitle: "Scaffold Event Stages | Load-In, Show, Dismantle",
     description:
-      "Stage decks, roofs, speaker towers, and viewing platforms for events in Dar es Salaam, erected on a tight load-in and dismantled when the show is over.",
+      "Stage decks, roofs, and speaker towers for a Dar es Salaam ceremony or concert. We erect on a tight load-in and dismantle when the field has to be a field again.",
     summary: "Stages, roofs, and towers for a ceremony, a concert, or a brand day — up for the show, dismantled after the last encore.",
     image: "/images/event-stage.jpg",
     imageAlt: "Outdoor event stage on grass, with scaffold towers, LED screens, and the deck being built",
@@ -155,9 +155,9 @@ export const SERVICES: Service[] = [
   {
     slug: "cradle",
     title: "Cradle",
-    seoTitle: "Cradle Hire in Dar es Salaam | B&H Proscaff",
+    seoTitle: "Cradle Hire for Glass and Tank Faces | B&H Proscaff",
     description:
-      "Suspended cradles for façade cleaning, repairs, and coatings in Dar es Salaam, when a tied scaffold is the wrong amount of steel for a tall face.",
+      "A suspended cradle when a full tied scaffold is too much steel for a strip of façade. We check the roof can take it, then brief the operator before anyone goes over.",
     summary: "A cradle on the façade when a full scaffold would take longer than the work on the glass or the cladding.",
     image: "/images/cradle-glass.jpg",
     imageAlt: "Suspended cradle on a glass office tower, with drop lines running down the façade",
@@ -202,9 +202,9 @@ export const SERVICES: Service[] = [
   {
     slug: "scissor-platforms",
     title: "Scissor platform hire and sales",
-    seoTitle: "Scissor Lift Hire and Sales in Dar es Salaam | B&H Proscaff",
+    seoTitle: "Scissor Platform Hire and Sales | Briefed, Not Dropped Off",
     description:
-      "Scissor platform hire and sales from Salasala. B&H Proscaff briefs the operator, or recommends a scaffold when the ground or the duration says so.",
+      "A maintained scissor platform for firm, level ground in Dar es Salaam. We brief travel and descent, and we will tell you to use scaffold if the ground or duration says so.",
     summary: "A maintained scissor platform for firm, level ground — hired or sold — with a briefing, not just a drop-off.",
     image: "/images/scissor-lift.jpg",
     imageAlt: "Green scissor lift with a guarded platform, black scissor stack, and wheels",
@@ -243,9 +243,9 @@ export const SERVICES: Service[] = [
   {
     slug: "surface-coatings",
     title: "Sandblasting and coatings",
-    seoTitle: "Sandblasting and Coatings in Dar es Salaam | B&H Proscaff",
+    seoTitle: "Sandblasting and Coatings | Steel, Tanks, Elevations",
     description:
-      "Sandblasting and protective coatings from B&H Proscaff in Dar es Salaam, including work from the same scaffold our access crew is standing.",
+      "Abrasive preparation and protective coatings from the same access our crew is standing. Containment and a hold-point before the first coat, including live industrial sites.",
     summary: "Blast, profile, and coat — on steel, tanks, and elevations — often from the scaffold already on the face.",
     image: "/images/coating-blast.jpg",
     imageAlt: "Operator in a blast helmet preparing a steel pipe with abrasive, on a live industrial site",
@@ -290,9 +290,9 @@ export const SERVICES: Service[] = [
   {
     slug: "formwork",
     title: "Formwork hire and sales",
-    seoTitle: "Formwork Hire and Sales in Dar es Salaam | B&H Proscaff",
+    seoTitle: "Formwork Hire and Sales | Shutters with the Scaffold",
     description:
-      "Formwork hire and sales for reinforced-concrete walls, slabs, and columns in Dar es Salaam, coordinated with B&H Proscaff access so the pour and the scaffold are not fighting for the same bay.",
+      "Wall, column, and slab shutters plus falsework, hired or sold, planned so the pour is not blocked by our own scaffold on the same face in Dar es Salaam.",
     summary: "Shutters and falsework for hire or purchase, planned with the access so the pour is not blocked by the steel.",
     image: "/images/formwork.jpg",
     imageAlt: "Crew setting slab formwork and stacked shutter panels on a roof pour in Dar es Salaam",

@@ -8,9 +8,9 @@ import { PROJECTS, type Project } from "../data/projects"
 import { servicePath } from "../data/services"
 import { breadcrumbNode, localBusinessNode, webPageNode } from "../data/site"
 
-const TITLE = "Scaffolding Project Photos | B&H Proscaff Dar es Salaam"
+const TITLE = "Photographs from B&H Proscaff Sites | Dar es Salaam"
 const DESCRIPTION =
-  "Photographs of work by B&H Proscaff Engineering Limited: scaffolding, formwork, sandblasting and coatings, cradles, mobile towers, and a scissor platform."
+  "Tied elevations, event stages, cradles, sandblasting, formwork, and a scissor platform — captions of the work, not invented project names."
 
 export default function ProjectsPage() {
   const [active, setActive] = useState<number | null>(null)

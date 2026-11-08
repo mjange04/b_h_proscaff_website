@@ -6,9 +6,9 @@ import { Container, EnquiryBand } from "../components/ui"
 import { SERVICES, serviceNumber, servicePath } from "../data/services"
 import { breadcrumbNode, localBusinessNode, webPageNode } from "../data/site"
 
-const TITLE = "Scaffolding Services in Dar es Salaam | B&H Proscaff"
+const TITLE = "All B&H Proscaff Services | Hire, Sales, and Access"
 const DESCRIPTION =
-  "Scaffolding hire and sales, scaffold event stages, cradles, scissor platforms, sandblasting and coatings, and formwork hire and sales from B&H Proscaff in Dar es Salaam."
+  "Choose scaffolding, scaffold event stages, a cradle, a scissor platform, sandblasting and coatings, or formwork. Send a photograph of the site and we will say which belongs."
 
 export default function ServicesPage() {
   return (

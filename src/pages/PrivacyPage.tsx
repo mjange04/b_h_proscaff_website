@@ -4,9 +4,9 @@ import PageHeader from "../components/PageHeader"
 import { Container } from "../components/ui"
 import { SITE, breadcrumbNode, webPageNode } from "../data/site"
 
-const TITLE = "Privacy | B&H Proscaff Engineering Limited"
+const TITLE = "Privacy of Enquiries | B&H Proscaff Engineering"
 const DESCRIPTION =
-  "How B&H Proscaff Engineering Limited handles enquiries sent from bhproscaffeng.com by phone, email, or WhatsApp."
+  "bhproscaffeng.com does not store your message. If you send an enquiry, it leaves by WhatsApp or email and we use it to answer you."
 
 export default function PrivacyPage() {
   return (

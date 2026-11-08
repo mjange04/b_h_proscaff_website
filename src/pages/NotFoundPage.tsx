@@ -8,8 +8,8 @@ export default function NotFoundPage() {
   return (
     <>
       <Seo
-        title="Page not found | B&H Proscaff"
-        description="This page is not on the B&H Proscaff Engineering Limited website."
+        title="Page Not Found | B&H Proscaff Engineering"
+        description="That address is not on bhproscaffeng.com. The services, site photographs, and Salasala phone numbers are still here."
         path={pathname}
         noindex
       />

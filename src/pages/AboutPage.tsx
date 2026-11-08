@@ -3,9 +3,9 @@ import PageHeader from "../components/PageHeader"
 import { Container, EnquiryBand } from "../components/ui"
 import { breadcrumbNode, fullAddress, localBusinessNode, webPageNode } from "../data/site"
 
-const TITLE = "About B&H Proscaff Engineering Limited | Salasala"
+const TITLE = "About B&H Proscaff Engineering | Salasala, Tanzania"
 const DESCRIPTION =
-  "B&H Proscaff Engineering Limited is based in Salasala, Dar es Salaam. Scaffolding hire and sales, scaffold event stages, cradles, scissor platforms, sandblasting and coatings, and formwork hire and sales."
+  "A Salasala crew that erects the scaffold, alters it as the job moves, and dismantles it. We work in Dar es Salaam and say plainly if we cannot man a site further out."
 
 const EXPECTATIONS = [
   {

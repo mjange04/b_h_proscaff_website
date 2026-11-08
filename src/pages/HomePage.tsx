@@ -8,9 +8,9 @@ import { PROJECTS } from "../data/projects"
 import { SERVICES, serviceNumber, servicePath } from "../data/services"
 import { SITE, breadcrumbNode, localBusinessNode, webPageNode } from "../data/site"
 
-const TITLE = "Scaffolding Contractor in Dar es Salaam | B&H Proscaff Engineering"
+const TITLE = "Scaffold Engineering from Salasala | B&H Proscaff Dar es Salaam"
 const DESCRIPTION =
-  "B&H Proscaff Engineering Limited provides scaffolding hire and sales, scaffold event stages, cradles, scissor platforms, sandblasting and coatings, and formwork hire and sales from Salasala, Dar es Salaam."
+  "B&H Proscaff Engineering Limited stands the access in Dar es Salaam — hire, alter, and dismantle from Salasala, with stages, cradles, platforms, coatings, and formwork on the same call."
 
 const FACTS = [
   { label: "Base", value: "Salasala, Dar es Salaam" },

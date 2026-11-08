@@ -7,9 +7,9 @@ import { Button, Container } from "../components/ui"
 import { SERVICES } from "../data/services"
 import { SITE, breadcrumbNode, fullAddress, localBusinessNode, webPageNode, whatsappHref } from "../data/site"
 
-const TITLE = "Contact B&H Proscaff Engineering | Salasala, Dar es Salaam"
+const TITLE = "Call or WhatsApp Salasala | B&H Proscaff Contact"
 const DESCRIPTION =
-  "Call or WhatsApp B&H Proscaff Engineering Limited in Salasala, Dar es Salaam on +255 798 472 769 or +255 798 486 837, or email info@bhproscaffeng.com."
+  "Two Dar es Salaam lines on WhatsApp — +255 798 472 769 and +255 798 486 837 — plus info@bhproscaffeng.com. Send a photograph of the elevation or the ground."
 
 type Fields = {
   name: string
